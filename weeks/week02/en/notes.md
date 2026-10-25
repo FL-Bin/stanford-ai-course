@@ -94,4 +94,3 @@ Flow: client calls `tools/list` → server returns name, description and JSON sc
 - [ ] Build a tiny MCP server with 2–3 outcome-oriented tools
 - [ ] Try Superpowers or OpenSpec and compare with RePPIT
 
-> 💡 **Gaibin's note**: (to be added)

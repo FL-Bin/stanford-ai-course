@@ -72,4 +72,3 @@ No slides or transcript published yet; notes will follow.
 - [ ] Add a `PostToolUse` hook that formats or tests after edits
 - [ ] Try a plan / implement / review split across three subagents
 
-> 💡 **Gaibin's note**: (to be added)

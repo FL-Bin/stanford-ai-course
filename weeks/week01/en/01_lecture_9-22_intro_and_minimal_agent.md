@@ -29,4 +29,3 @@ Walkthrough: [03](03_code_walkthrough_minimal_agent.md).
 - [ ] Explain "good context → good code" in your own words
 - [ ] Draw the loop: user → harness → model → tool → result back
 
-> 💡 **Gaibin's note**: (to be added)

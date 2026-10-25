@@ -36,11 +36,7 @@ weeks/weekNN/
   links.md   官方材料链接
   zh/        中文笔记
   en/        English notes
-notes-by-gaibin/   我自己的见解和补充（标注「盖彬注」）
 ```
-
-## 「盖彬注」
-笔记里标为 **💡 盖彬注 / Gaibin's note** 的段落，以及 `notes-by-gaibin/` 目录里的内容，是我个人的见解和补充，和课程内容分开。
 
 ## 版权与免责声明
 - 本仓库是个人学习笔记，**非官方**，与斯坦福大学、CS146S 课程团队及嘉宾所在公司没有任何关联，也未经其审阅或认可。
@@ -62,9 +58,6 @@ Weeks 1–4 are done (the week-4 guest lecture awaits official materials); week 
 
 ### How to use
 Open a week, start with `links.md` for the official materials, then read the notes in `zh/` or `en/`. Each note ends with a self-check and exercises.
-
-### Personal notes
-Sections marked **💡 Gaibin's note / 盖彬注** and the `notes-by-gaibin/` folder are my own opinions, kept separate from course content.
 
 ### Disclaimer
 - Unofficial personal study notes. **Not affiliated with, reviewed or endorsed by Stanford University**, the CS146S staff, or guest speakers' companies.

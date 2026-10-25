@@ -29,4 +29,3 @@
 - [ ] Score one of your repos with the checklist and fix the weakest area
 - [ ] Revisit when the slides are published
 
-> 💡 **Gaibin's note**: (to be added)

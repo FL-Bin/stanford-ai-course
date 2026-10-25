@@ -51,4 +51,3 @@ See week 2 for the API vs. MCP vs. skills comparison.
 - [ ] Add trigger descriptions and split out a reference file (progressive disclosure)
 - [ ] Write a verification skill the agent runs after finishing a task
 
-> 💡 **Gaibin's note**: (to be added)

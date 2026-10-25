@@ -23,4 +23,3 @@ Production agents such as Claude Code wrap the loop in a **harness**; the instru
 ## Self-check
 - [ ] Name the eight parts and say which are always in context vs. loaded on demand
 
-> 💡 **Gaibin's note**: (to be added)
