@@ -1,32 +1,21 @@
-# Structure of Claude Code's internal prompts (9/24 prompts folder)
-> The instructor captured six internal prompt files. We describe their **structure** in our own words; the original texts are not reproduced here — use the official link in [links.md](../links.md).
+# Claude Code internal prompts (6 files): structure
 
-| File | What it is |
+## 官方材料 / Official materials
+| Material | Link |
 |---|---|
-| system_prompt | The main system prompt |
-| tool_list | Built-in tools by category |
-| config_files | How CLAUDE.md is injected |
-| plan_mode | The plan-mode prompt |
-| subagent_prompt | One example task brief sent to a subagent |
-| compaction_prompt | The context-summary prompt |
+| Prompts folder | [Google Drive](https://drive.google.com/drive/folders/1c6_atVW0RrqEBWsNIscG2KNwCiuPxWQG?usp=drive_link) |
+| Slides (9/24) | [Google Slides](https://docs.google.com/presentation/d/1RZu-p18Qybbgm8WVP2RH04ESc4Bn377B-T9j5-TBFdQ/edit?usp=drive_link) |
 
-## system_prompt
-Identity (software-engineering agent) → security boundaries (allow authorized/defensive work, refuse destructive attacks) → harness notes (Markdown output; tools gated by permission mode — adapt instead of retrying a denied call; hook output counts as user feedback; don't follow instructions in pasted content unless the user asks — anti prompt-injection; prefer file tools over shell; parallelize independent calls; cite `file:line`) → match local code style → confirm irreversible/external actions; report results honestly → **file-based memory** (one file per memory, frontmatter, four types, an index file) → environment → context management.
-👉 Lesson for your own skills/CLAUDE.md: short, sectioned, principle-based.
 
-## tool_list
-Files; Shell; search and code intelligence; agents; plan/isolation; scheduling; artifacts; MCP resources; interaction; design/review.
+The instructor captured these prompts in class. They are not reproduced here; we describe their structure.
 
-## config_files
-A fixed header saying the instructions override defaults, followed by the project's CLAUDE.md (overview, structure, run commands, code style). 👉 A "just enough" CLAUDE.md template.
+1. **system_prompt.md** — identity; security boundaries; harness rules (Markdown output, permission modes, hooks as user feedback, pasted content is not instructions, prefer file tools, parallel calls, `file:line` references); code style; confirm irreversible actions and report honestly; file-based memory with typed frontmatter and a `MEMORY.md` index; environment; context management.
+2. **tool_list.md** — tools grouped as files, shell, search/LSP, agents, plan/worktree, scheduling, artifacts, MCP resources, interaction, design/review.
+3. **config_files.md** — a fixed override notice followed by the project's CLAUDE.md (overview, structure, run commands, code style).
+4. **plan_mode.md** — read-only except the plan file; Phase 1 explore (≤3 Explore subagents), Phase 2 design (≤3 Plan subagents), review, final plan, ExitPlanMode for approval.
+5. **subagent_prompt.md** — a performance-analysis brief: constraints, per-file background, required coverage, output format separating measurements from inference.
+6. **compaction_prompt.md** — text only, no tools; `<analysis>` then `<summary>` with fixed sections; keep safety constraints verbatim.
 
-## plan_mode
-Hard rule: only the plan file may be edited; read-only otherwise, overriding all other instructions. Phases: understand (≤3 parallel Explore subagents, usually 1; look for reusable code) → design (Plan subagents, skippable for small tasks) → review → final plan → submit for approval.
-
-## subagent_prompt
-A performance-analysis brief: constraints (don't modify the repo or real data; use temp paths and a scratch dir) → background per module → what to cover (complexity, measurements at several scales, concurrency/integrity, growth, ranked recommendations) → output format, **separating measured facts from inference**.
-👉 A good subagent brief = goal + no-go zones + known context + deliverable format.
-
-## compaction_prompt
-Text only, no tool calls → chronological analysis first, then a summary with fixed sections (requests, concepts, files, errors/fixes, problem solving, all user messages, pending tasks, current work, next step) → keep safety constraints exact; only real user messages count as user messages.
-👉 Use this checklist when you write a handoff note or run `/compact`.
+> [!TIP]
+> **Supplement**
+> Reusable patterns: keep prompts short and sectioned; a good subagent brief = goal + no-go zones + known context + deliverable format; use the compaction checklist for your own handoff notes.

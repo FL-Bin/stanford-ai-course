@@ -1,46 +1,25 @@
-# 9/24 lecture notes · Anatomy of a modern coding agent
-> Our paraphrased notes in lecture order, not a transcript. The official transcript is linked in [links.md](../links.md).
+# 9/24 lecture notes (transcript order)
 
-## Logistics
-- Final project spec is out, with ~4 milestones (including a proposal) to avoid last-week vibe coding. Teams of up to 2 humans, any number of agents.
-- Credits from several coding-agent vendors were arranged; OSS partners introduced the following week.
+## 官方材料 / Official materials
+| Material | Link |
+|---|---|
+| Slides (9/24) | [Google Slides](https://docs.google.com/presentation/d/1RZu-p18Qybbgm8WVP2RH04ESc4Bn377B-T9j5-TBFdQ/edit?usp=drive_link) |
+| Transcript (9/24) | [themodernsoftware.dev](https://themodernsoftware.dev/materials/9-24-26-transcript.txt) |
+| Prompts folder | [Google Drive](https://drive.google.com/drive/folders/1c6_atVW0RrqEBWsNIscG2KNwCiuPxWQG?usp=drive_link) |
+| Video | not published yet |
+| Readings | [Lessons from Building Claude Code](https://x.com/trq212/status/2027463795355095314) · [Dive into Claude Code](https://arxiv.org/pdf/2604.14228) |
 
-## From the 200-line agent to a modern harness
-- Everything except the model itself is observable from the outside. Demo: Claude Code with a newly released model.
-- Thesis: harness design may be the hardest and most important problem for coding agents — and for agents in sales, law, support, etc.
 
-## Method: capture the traffic
-- A proxy intercepts Claude Code's requests/responses (like Wireshark or browser devtools). **Assignment 1 is to do this yourself.**
-- Request shape: `model` + `messages` (user/assistant/system) + `tools` + `system`; the harness injects some messages silently.
+Our own notes, following the order of the class.
 
-## Tool list
-- Each tool: name, description, parameter schema. ~40 native tools (files, Bash, search, LSP, agents, plan/worktree, scheduling, artifacts, MCP resources, interaction).
-- MCP tools carry an `mcp__` prefix. **All tool definitions ride along on every request**, so too many MCP servers bloat context.
-- **MCP vs. skills**: an MCP tool is a primitive (one call, input → output); a skill composes tools, scripts and glue prompts into a multi-step procedure and uses **progressive disclosure** (metadata first, full text when needed).
-- History: Claude Code took off partly because its harness was minimal; early MCP servers with ~100+ tools were bloated. Trend: start with 3–5 strong "Swiss-army" tools.
-
-## System prompt
-- Recent versions are much shorter than earlier ones; the instructor guesses that know-how (e.g. Git usage) moved into model weights.
-- Sections: identity, safety, harness notes, session notes, **file-based memory**, environment, context management.
-- You don't control it but it costs context on every request — possibly tens of thousands of tokens before your first message.
-- Why no RAG for memory? Benchmarks suggest flat files are often enough.
-
-## CLAUDE.md / AGENTS.md
-- Same idea; AGENTS.md is the cross-tool standard. A symlink can connect them.
-- It is the "system prompt you control", injected before the first user message with an instruction that it overrides defaults.
-- Keep it short: run/test/start commands; too much over-constrains the model; avoid big code blocks.
-
-## Plan mode
-- Enter/exit tools; on entry a long planning prompt is injected: understand (Explore subagents) → design → review → final plan → exit. Output is a plan file.
-
-## Skills
-- A written procedure. Demo: a "check code quality" SKILL.md describing good vs. bad code; the harness injects a command message, then loads the SKILL.md.
-
-## Subagents
-- The main agent orchestrates fresh-context workers, possibly in parallel; exploration doesn't pollute the main context.
-
-## Hooks and compaction
-- Hooks only mentioned briefly. Compaction runs automatically near the limit or manually, using a dedicated summary prompt, replacing history with the summary.
-
-## Takeaways
-- The trend is **simplicity**: fewer, stronger tools; more trust in the model. "Dumb zone" is a joke term, not jargon, for degraded quality on long contexts.
+1. **Logistics:** final project with ~4 milestones including a proposal; up to two humans per team; credits for Claude Code, Factory, xAI, Devin; OSS partners next week; waitlist deadline the 27th.
+2. **From 200 lines to a modern harness:** everything except the model (the private intelligence layer) is visible. Demo uses Claude Code with Opus 5.5, released two days earlier. Harness design matters for agents in any domain — sales, legal, support.
+3. **Method:** a proxy intercepts Claude Code's requests, like Wireshark; building this is the first assignment. Requests contain `model`, `messages` (user/assistant/system), `tools`, `system`; some messages are injected silently by the harness.
+4. **Tool list:** ~40 native tools plus `mcp__`-prefixed MCP tools, all sent every request — too many MCP servers crowd the context. MCP tools are primitives; skills chain tools, scripts and prompts and use progressive disclosure. Claude Code's early popularity came partly from a minimalist harness; start with 3–5 versatile tools such as Bash and SQL. Agents talk in natural language because training data is text.
+5. **System prompt:** static, harness-controlled, in every request; identity line, safety, harness and session info, a large memory section, environment, context management. Shorter than before (roughly 50–80 lines vs 200–250). Visibility is not a big attack surface — Codex's harness is on GitHub. Flat files often suffice for memory.
+6. **CLAUDE.md / AGENTS.md:** the user-controlled counterpart to the system prompt, injected before the first user message with an override notice. Keep it short: run/test/serve commands.
+7. **Plan mode:** enter/exit tools; injected plan prompt with phases (understand → design → review → final plan); output is a plan file. Demo: recurring tasks for the todo app.
+8. **Skills:** a "check code quality" skill — a command message is injected, then SKILL.md is read into context.
+9. **Subagents:** an orchestrator spawns fresh-context workers that report back without polluting the main context.
+10. **Hooks and compaction:** hooks briefly; compaction summarizes and replaces context (e.g. 500k → 150k tokens).
+11. **Wrap-up:** the trend is simplicity and reliance on the model; "dumb zone" is a joke term for degraded performance in long contexts; prompts are getting shorter.

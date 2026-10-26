@@ -2,16 +2,24 @@
 *Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems*
 作者：Jiacheng Liu, Xiaohan Zhao, Xinyi Shang, Zhiqiang Shen（MBZUAI VILA Lab / UCL）
 arXiv:2604.14228v3（2026-10-10），共 55 页
-链接：https://arxiv.org/pdf/2604.14228 ｜ 代码仓库：https://github.com/VILA-Lab/Dive-into-Claude-Code
 
-说明：这是导读式的中文结构笔记，覆盖论文主线和关键数字，**不是全文翻译**（论文太长，而且有版权）。细节请读 PDF。
+## 官方材料 / Official materials
+| 材料 Material | 链接 Link |
+|---|---|
+| 论文 Paper | [arXiv PDF](https://arxiv.org/pdf/2604.14228) |
+| 代码 Code | [GitHub VILA-Lab/Dive-into-Claude-Code](https://github.com/VILA-Lab/Dive-into-Claude-Code) |
+
+下面按论文主线做导读式讲解，覆盖关键数字，不是全文翻译。
 
 ## 研究对象与方法
 - 分析公开的 Claude Code TypeScript 源码（v2.1.88），再和两个开源代理系统比较：**OpenClaw**（多渠道个人助理网关）和 **Hermes Agent**（单进程、多界面的助理）。
 
 ## 一句话结论
-> 核心是一个简单的 **while 循环**（调用模型 → 执行工具 → 重复）；**大部分代码都在循环周围的系统里**。
-这和讲义 03 的 200 行代码、讲义 04 的“框架”概念完全对得上。
+核心是一个简单的 **while 循环**（调用模型 → 执行工具 → 重复）；**大部分代码都在循环周围的系统里**。
+
+> [!TIP]
+> **补充**
+> 这和讲义 03 的 200 行代码、讲义 04 的“框架”概念完全对得上。
 
 ## 五个价值观（Five Values）
 1. Human decision authority：人保有最终决定权
@@ -62,6 +70,7 @@ arXiv:2604.14228v3（2026-10-10），共 55 页
 - 引用的纵向数据（McCain et al., 2026）：用户自动批准的比例从不到 50 次会话时的约 20%，上升到 750 次会话时的 40% 以上 → 信任是逐步建立的（论文说“co-constructed”，由模型、用户和产品共同构建）。
 - 论文最后提出了未来代理系统的 **6 个开放方向**（第 13 节）。
 
-## 和你相关的
-- 你写的 skills 属于“低常驻成本”的扩展；MCP 工具定义会常驻上下文 → 跟讲义 04 的结论一致。
-- 读法建议：先读 §1–3（价值观与总体架构），再按兴趣读 §5（权限）、§6（扩展）、§7（上下文/压缩）、§8（子代理）。
+> [!TIP]
+> **补充**
+> - 你写的 skills 属于“低常驻成本”的扩展；MCP 工具定义会常驻上下文 → 跟讲义 04 的结论一致。
+> - 读法建议：先读 §1–3（价值观与总体架构），再按兴趣读 §5（权限）、§6（扩展）、§7（上下文/压缩）、§8（子代理）。

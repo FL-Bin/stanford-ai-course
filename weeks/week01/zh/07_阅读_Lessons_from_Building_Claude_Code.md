@@ -1,7 +1,11 @@
 # 讲义 07｜阅读 2：Lessons from Building Claude Code: Seeing like an Agent
-来源：X 长文，作者 @trq212（Claude Code 团队），发布于 2026-02-28 03:20（北京时间）
-链接：https://x.com/trq212/status/2027463795355095314
-说明：下面是详细的中文要点笔记，不是全文翻译。本仓库不转载原文，请看链接。
+
+## 官方材料 / Official materials
+| 材料 Material | 链接 Link |
+|---|---|
+| 原文 Article (X) | [@trq212 on X](https://x.com/trq212/status/2027463795355095314) |
+
+作者 @trq212（Claude Code 团队），发布于 2026-02-28 03:20（北京时间）。下面按原文顺序做精译讲解，不是全文翻译。
 
 ## 核心问题：怎么设计代理的“行动空间（action space）”
 - 工具可以有很多种形态：bash、skills、代码执行（programmatic tool calling）……是只给一个万能工具，还是给 50 个专用工具？
@@ -35,4 +39,6 @@
 ## 结论
 没有死规则，工具设计**既是艺术也是科学**，取决于模型、目标和环境。多实验、多读输出、像代理一样看问题。
 
+> [!TIP]
+> **补充**
 > 对照：课上（讲义 04）说 Claude Code 有约 40 个内置工具，这篇文章（2026 年 2 月）说约 20 个。时间不同、统计口径可能也不同，所以数字不一样。

@@ -1,11 +1,23 @@
 # Reading · Dive into Claude Code (paper)
-*Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems* — Liu, Zhao, Shang, Shen (MBZUAI VILA Lab / UCL), arXiv:2604.14228. Links in [links.md](../links.md). A reading guide in our own words, not a translation.
+*Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems* — Liu, Zhao, Shang, Shen (MBZUAI VILA Lab / UCL), arXiv:2604.14228. 
+
+## 官方材料 / Official materials
+| Material | Link |
+|---|---|
+| Paper | [arXiv PDF](https://arxiv.org/pdf/2604.14228) |
+| Code | [GitHub](https://github.com/VILA-Lab/Dive-into-Claude-Code) |
+
+A reading guide in our own words, not a translation.
 
 ## What and how
 Analyzes Claude Code's publicly available TypeScript source and compares it with two open agent systems, OpenClaw and Hermes Agent.
 
 ## Main finding
-The core is a simple while loop (call model → run tools → repeat); **most of the code is the system around the loop** — consistent with notes 03–04.
+The core is a simple while loop (call model → run tools → repeat); **most of the code is the system around the loop**.
+
+> [!TIP]
+> **Supplement**
+> This matches notes 03–04.
 
 ## Five values
 Human decision authority · safety, security, privacy · reliable execution · capability amplification · contextual adaptability.
@@ -29,4 +41,6 @@ Deny by default and escalate to a human · graduated trust · defense in depth �
 ## Notable
 Cited longitudinal data: auto-approve rates rise with experience (~20% early to 40%+ after many sessions) — trust is built over time. The paper ends with six open directions.
 
-Reading order: §1–3 first, then §5 (permissions), §6 (extensions), §7 (context), §8 (subagents).
+> [!TIP]
+> **Supplement**
+> Reading order: §1–3 first, then §5 (permissions), §6 (extensions), §7 (context), §8 (subagents).

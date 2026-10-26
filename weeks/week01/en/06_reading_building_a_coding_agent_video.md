@@ -1,3 +1,13 @@
 # Reading · Building a Coding Agent (video)
-Link: <https://youtube.com/watch?v=s7ZzkdvCMDY> (course channel).
-We had no subtitles when preparing these notes, so there is only this pointer. From the title it appears to match the 9/22 "~200 lines" demo (our inference) — pair it with [03](03_code_walkthrough_minimal_agent.md). Tip: YouTube auto-translated captions work for non-English viewers.
+
+## 官方材料 / Official materials
+| Material | Link |
+|---|---|
+| Video | [YouTube](https://youtube.com/watch?v=s7ZzkdvCMDY) |
+
+
+*How to code Claude Code in ~200 lines of code*, official course channel. No notes yet (no transcript available when compiled).
+
+> [!TIP]
+> **Supplement**
+> Likely the same demo as lecture 1 (inferred, not verified) — watch alongside [03](03_code_walkthrough_minimal_agent.md).
