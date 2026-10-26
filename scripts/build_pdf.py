@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build CS146S-notes-zh.pdf / CS146S-notes-en.pdf from the notes, in learning-path order.
 
-Usage: python3 scripts/build_pdf.py [outdir]   (needs: pip install weasyprint markdown; Noto Sans SC or fonts-noto-cjk)
+Usage: python3 scripts/build_pdf.py [outdir]   (BOOK=1 builds the textbook from book/{lang}/)
+         (needs: pip install weasyprint markdown; Noto Sans SC or fonts-noto-cjk)
 Only our own notes are included; no course slides or transcripts.
 """
 import datetime, glob, html, os, re, sys
@@ -23,7 +24,11 @@ TEXT = {
                src="Source", path="LEARNING_PATH.en.md"),
 }
 
+BOOK = os.environ.get("BOOK") == "1"
+
 def note_files(lang):
+    if BOOK:
+        return sorted(glob.glob(os.path.join(ROOT, "book", lang, "*.md")))
     files = []
     for wk in sorted(glob.glob(os.path.join(ROOT, "weeks", "week*"))):
         files += sorted(glob.glob(os.path.join(wk, lang, "*.md")))
@@ -31,8 +36,26 @@ def note_files(lang):
 
 SWITCH = re.compile(r"^\s*(\*\*中文\*\*\s*\|\s*\[English\]\([^)]*\)|\[中文\]\([^)]*\)\s*\|\s*\*\*English\*\*|\*\*简体中文\*\*.*|\[简体中文\].*)\s*$")
 
+def mermaid(text):
+    """Render ```mermaid blocks to SVG via mermaid.ink; fall back to a plain code block."""
+    import base64, urllib.request
+    def rep(m):
+        src = m.group(1)
+        try:
+            url = "https://mermaid.ink/img/" + base64.urlsafe_b64encode(src.encode()).decode() + "?type=png&bgColor=white&width=1200"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            png = urllib.request.urlopen(req, timeout=60).read()
+            return '\n<div class="diagram"><img src="data:image/png;base64,%s"/></div>\n' % base64.b64encode(png).decode()
+        except Exception:
+            return "```text\n" + src + "```"
+    return re.sub(r"```mermaid\n(.*?)```", rep, text, flags=re.S)
+
 def preprocess(text):
+    text = mermaid(text)
     lines = [l for l in text.splitlines() if not SWITCH.match(l)]
+    # keep the English / Chinese / source lines of a quote on separate lines
+    lines = [l + "  " if l.startswith("> ") and not l.startswith("> [!") and i + 1 < len(lines) and lines[i + 1].startswith("> ") else l
+             for i, l in enumerate(lines)]
     out, i = [], 0
     while i < len(lines):
         if re.match(r"^>\s*\[!NOTE\]\s*$", lines[i]):
@@ -84,15 +107,16 @@ h1 { font-size: 20pt; border-bottom: 2px solid #1F5FA8; padding-bottom: 4pt; }
 h2 { font-size: 14pt; } h3 { font-size: 12pt; } h4 { font-size: 11pt; }
 h3, h4, h5, h6 { bookmark-level: none; }
 .chapter { page-break-before: always; }
+.diagram { text-align: center; margin: 8pt 0; } .diagram img { max-width: 100%; max-height: 120mm; width: auto; }
 a { color: #1F5FA8; text-decoration: none; word-break: break-all; }
-code { font-family: "Noto Sans SC", "Noto Sans Mono CJK SC", monospace; font-weight: 400; font-size: 9pt; background: #f3f4f6; padding: 0 2pt; }
+code { font-family: "DejaVu Sans Mono", "Noto Sans Mono CJK SC", "Noto Sans SC", monospace; font-weight: 400; font-size: 9pt; background: #f3f4f6; padding: 0 2pt; }
 pre { background: #f6f8fa; padding: 6pt 8pt; border-radius: 4pt; white-space: pre-wrap; font-size: 8.5pt; }
 pre code { background: none; padding: 0; }
 table { border-collapse: collapse; width: 100%; font-size: 9pt; margin: 6pt 0; }
 th, td { border: 1px solid #d0d7de; padding: 3pt 5pt; text-align: left; vertical-align: top; }
 th { background: #eef3fa; }
 blockquote { margin: 8pt 0; padding: 4pt 10pt; border-left: 4px solid #c4c8cc; background: #f4f5f6; color: #555; }
-.note { margin: 8pt 0; padding: 6pt 10pt; border-left: 4px solid #1F5FA8; background: #eaf1fa; border-radius: 3pt; }
+.note { break-inside: avoid; margin: 8pt 0; padding: 6pt 10pt; border-left: 4px solid #1F5FA8; background: #eaf1fa; border-radius: 3pt; }
 .note > p:first-child strong { color: #1F5FA8; }
 .cover { page: cover; text-align: center; padding-top: 55mm; }
 .cover h1 { border: none; font-size: 28pt; bookmark-level: none; }
@@ -111,7 +135,7 @@ MD_EXT = ["tables", "fenced_code", "md_in_html", "sane_lists"]
 
 def build(lang):
     t = TEXT[lang]
-    files = [os.path.join(ROOT, t["path"])] + note_files(lang)
+    files = ([] if BOOK else [os.path.join(ROOT, t["path"])]) + note_files(lang)
     chapters, toc = [], []
     for n, f in enumerate(files):
         h = markdown.markdown(preprocess(open(f, encoding="utf-8").read()), extensions=MD_EXT)
@@ -136,7 +160,7 @@ def build(lang):
 <title>{html.escape(t['title'])}</title><style>{CSS}</style></head><body>{cover}
 <section class="toc"><h1>{t['toc']}</h1><ul>{toc_html}</ul></section>{''.join(chapters)}</body></html>"""
     os.makedirs(OUT, exist_ok=True)
-    out = os.path.join(OUT, f"CS146S-notes-{lang}.pdf")
+    out = os.path.join(OUT, f"CS146S-book-{lang}.pdf" if BOOK else f"CS146S-notes-{lang}.pdf")
     HTML(string=doc, base_url=ROOT).write_pdf(out)
     print("wrote", out)
 
