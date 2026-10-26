@@ -1,6 +1,16 @@
 # 更新记录 / Changelog
 日期为北京时间 / Dates in Beijing time (UTC+8).
 
+## 2026-10-27
+- 新增教材 book/：把课程重新编排成循序渐进的章节，完成目录和第 1–5 章（中英），每章开头列出对应讲座、讲者和阅读的官方链接；第 6–10 章随课程更新。
+  Added the textbook in book/: course reorganized into progressive chapters; contents and chapters 1–5 (zh + en) done, each listing its lectures, speakers and readings with official links; chapters 6–10 follow the course.
+- 教材 PDF（CS146S-book-zh.pdf / -en.pdf）由 GitHub Actions 自动生成，发布在 Release「pdf-latest」；原按周笔记 PDF 保留。流程图预先渲染到 book/assets，生成 PDF 不再依赖外部服务。
+  Textbook PDFs built by GitHub Actions and published to `pdf-latest`; weekly-notes PDFs kept. Diagrams pre-rendered to book/assets so builds need no external service.
+- README 改为三个阅读入口：教材 / 学习路线 / 按周笔记（附录）；学习路线每节课标注对应的教材章节。
+  README now offers three entry points: textbook / learning path / weekly notes (appendix); the learning path maps each lecture to its chapter.
+- 第 5 周：10/20 课件已发布，补上该讲笔记和链接。
+  Week 5: 10/20 slides published; lecture notes and links added.
+
 ## 2026-10-26
 - 新增学习路线与 PDF：LEARNING_PATH.md / LEARNING_PATH.en.md 按上课顺序列出每节课；整本中英文 PDF 由 GitHub Actions 自动生成，发布在 Release「pdf-latest」。
   Added learning path and PDF: LEARNING_PATH(.en).md lists every lecture in order; zh/en PDF books are built by GitHub Actions and published to the `pdf-latest` release.

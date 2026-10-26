@@ -2,7 +2,12 @@
 
 [简体中文](README.md) | **English**
 
-📚 **[Learning path](LEARNING_PATH.en.md)**: every lecture in class order with our notes, official slides and readings · 📄 **Download as PDF**: [中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf) (rebuilt automatically when notes change)
+## Where to start
+- 📖 **[Textbook](book/en/00-contents.md) (recommended)**: the course reorganized into progressive chapters, from how coding agents work to the software factory; each chapter lists the lectures and readings it covers so you can trace back to the originals. PDF: [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf) · [中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf)
+- 📚 **[Learning path](LEARNING_PATH.en.md)**: every lecture by date with speaker, official slides and readings, plus the matching textbook chapter.
+- 🗂 **[Weekly notes](weeks/) (appendix)**: the original slide-order notes for each week, handy for checking against the slides. PDF: [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf) · [中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf)
+
+PDFs are rebuilt automatically on every update; the links stay the same.
 
 > **Unofficial** study notes for Stanford CS146S *The Modern Software Developer*, **not affiliated with Stanford University** or the course staff. Course site: <https://themodernsoftware.dev/>
 
@@ -27,7 +32,7 @@ Every note starts with an "官方材料 / Official materials" table linking the 
 | 2 | Advanced Context Engineering | 9/29, 10/1 | ✅ Done → [week02/en](weeks/week02/en/notes.md) |
 | 3 | Agent Skills and CLI | 10/6, 10/8 | ✅ Done → [week03/en](weeks/week03/en/notes.md) |
 | 4 | Customizing Your Agent and Repository | 10/13, 10/15 | ✅ Done (guest lecture awaits official materials) → [week04/en](weeks/week04/en/notes.md) |
-| 5 | Agent-Ready Codebases | 10/20, 10/22 | 🟡 Partial (slides not yet published) → [week05/en](weeks/week05/en/notes.md) |
+| 5 | Agent-Ready Codebases | 10/20, 10/22 | ✅ Done (guest lecture awaits official materials) → [week05/en](weeks/week05/en/notes.md) |
 | 6 | Agentic Code Review | 10/27, 10/29 | ⏳ Pending |
 | 7 | Security | 11/3, 11/5 | ⏳ Pending |
 | 8 | Background Agents | 11/10, 11/12 | ⏳ Pending |
@@ -37,6 +42,7 @@ Every note starts with an "官方材料 / Official materials" table linking the 
 All 10 weeks are expected to be complete in early December 2026, when the course ends. See [CHANGELOG.md](CHANGELOG.md) for updates.
 
 ## How to use
+For structured study, read the [textbook](book/en/00-contents.md); the steps below are for the weekly notes.
 1. Open a week's folder and start with `links.md` to open the official slides / readings;
 2. Then read the notes in `en/` or `zh/`; self-checks and hands-on exercises are in the Supplement boxes;
 3. For week 1, start with `00_index.md` (Chinese: `00_本周索引.md`).

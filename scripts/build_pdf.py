@@ -24,7 +24,7 @@ TEXT = {
                src="Source", path="LEARNING_PATH.en.md"),
 }
 
-BOOK = os.environ.get("BOOK") == "1"
+BOOK = os.environ.get("BOOK") == "1"  # build the textbook (book/{lang}/) instead of the weekly notes
 
 def note_files(lang):
     if BOOK:
@@ -37,17 +37,15 @@ def note_files(lang):
 SWITCH = re.compile(r"^\s*(\*\*中文\*\*\s*\|\s*\[English\]\([^)]*\)|\[中文\]\([^)]*\)\s*\|\s*\*\*English\*\*|\*\*简体中文\*\*.*|\[简体中文\].*)\s*$")
 
 def mermaid(text):
-    """Render ```mermaid blocks to SVG via mermaid.ink; fall back to a plain code block."""
-    import base64, urllib.request
+    """Swap ```mermaid blocks for the pre-rendered PNGs in book/assets (see render_diagrams.py)."""
+    import hashlib
     def rep(m):
         src = m.group(1)
-        try:
-            url = "https://mermaid.ink/img/" + base64.urlsafe_b64encode(src.encode()).decode() + "?type=png&bgColor=white&width=1200"
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-            png = urllib.request.urlopen(req, timeout=60).read()
-            return '\n<div class="diagram"><img src="data:image/png;base64,%s"/></div>\n' % base64.b64encode(png).decode()
-        except Exception:
-            return "```text\n" + src + "```"
+        img = os.path.join(ROOT, "book", "assets", "mermaid-%s.png" % hashlib.sha1(src.encode()).hexdigest()[:12])
+        if os.path.exists(img):
+            return '\n<div class="diagram"><img src="file://%s"/></div>\n' % img
+        print("warning: diagram not pre-rendered, run scripts/render_diagrams.py", file=sys.stderr)
+        return "```text\n" + src + "```"
     return re.sub(r"```mermaid\n(.*?)```", rep, text, flags=re.S)
 
 def preprocess(text):
@@ -134,7 +132,9 @@ blockquote { margin: 8pt 0; padding: 4pt 10pt; border-left: 4px solid #c4c8cc; b
 MD_EXT = ["tables", "fenced_code", "md_in_html", "sane_lists"]
 
 def build(lang):
-    t = TEXT[lang]
+    t = dict(TEXT[lang])
+    if BOOK:
+        t["sub"] = t["sub"].replace("中文版", "教材 · 中文版").replace("English edition", "Textbook · English edition")
     files = ([] if BOOK else [os.path.join(ROOT, t["path"])]) + note_files(lang)
     chapters, toc = [], []
     for n, f in enumerate(files):

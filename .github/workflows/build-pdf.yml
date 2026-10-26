@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "weeks/**"
+      - "book/**"
       - "LEARNING_PATH*"
       - "scripts/**"
       - ".github/workflows/build-pdf.yml"
@@ -71,4 +72,4 @@ jobs:
           else
             gh release edit pdf-latest --notes "$NOTES"
           fi
-          gh release upload pdf-latest dist/CS146S-notes-zh.pdf dist/CS146S-notes-en.pdf --clobber
+          gh release upload pdf-latest dist/CS146S-book-zh.pdf dist/CS146S-book-en.pdf dist/CS146S-notes-zh.pdf dist/CS146S-notes-en.pdf --clobber

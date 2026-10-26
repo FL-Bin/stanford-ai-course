@@ -2,7 +2,12 @@
 
 **简体中文** | [English](README.en.md)
 
-📚 **[学习路线](LEARNING_PATH.md)**：按上课顺序列出每节课的笔记、官方课件和阅读 · 📄 **整本 PDF 下载**：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf)（随笔记更新自动生成）
+## 阅读入口
+- 📖 **[教材](book/zh/00-目录.md)（推荐从这里开始）**：把课程内容重新编排成循序渐进的章节，从编程代理的原理讲到软件工厂；每章开头列出对应的讲座和阅读，可以溯源到官方原文。PDF：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf)
+- 📚 **[学习路线](LEARNING_PATH.md)**：按上课日期列出每节课的讲者、官方课件和阅读，并注明对应教材哪一章。
+- 🗂 **[按周笔记](weeks/)（附录）**：每周按课件顺序整理的原始笔记，适合对照课件逐页查。PDF：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf)
+
+PDF 随仓库更新自动重新生成，链接不变。
 
 > 斯坦福 CS146S《The Modern Software Developer》的**非官方**学习笔记，与斯坦福大学及课程团队**无任何关联**。课程官网：<https://themodernsoftware.dev/>
 > Unofficial notes for Stanford CS146S — **not affiliated with Stanford University** or the course staff. English version: [README.en.md](README.en.md)
@@ -28,7 +33,7 @@
 | 2 | 进阶上下文工程 Advanced Context Engineering | 9/29, 10/1 | ✅ 已更新 → [weeks/week02](weeks/week02/) |
 | 3 | Agent Skills 与命令行 Agent Skills and CLI | 10/6, 10/8 | ✅ 已更新 → [weeks/week03](weeks/week03/) |
 | 4 | 定制代理和仓库 Customizing Your Agent and Repository | 10/13, 10/15 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week04](weeks/week04/) |
-| 5 | 让代码库适合代理 Agent-Ready Codebases | 10/20, 10/22 | 🟡 部分更新（官网未发课件）→ [weeks/week05](weeks/week05/) |
+| 5 | 让代码库适合代理 Agent-Ready Codebases | 10/20, 10/22 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week05](weeks/week05/) |
 | 6 | 代理代码审查 Agentic Code Review | 10/27, 10/29 | ⏳ 待更新 |
 | 7 | 安全 Security | 11/3, 11/5 | ⏳ 待更新 |
 | 8 | 后台代理 Background Agents | 11/10, 11/12 | ⏳ 待更新 |
@@ -38,6 +43,7 @@
 预计 2026 年 12 月上旬随课程结束完成全部 10 周。更新记录见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 怎么用
+想系统学习，直接读[教材](book/zh/00-目录.md)；下面是按周笔记的用法。
 1. 打开某一周的文件夹，先看 `links.md`，打开官方课件 / 阅读；
 2. 再读 `zh/` 或 `en/` 笔记，自查和动手练习放在「补充」框里；
 3. 第 1 周建议从 `00_本周索引.md`（英文 `00_index.md`）开始。

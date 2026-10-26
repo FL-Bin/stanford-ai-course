@@ -3,7 +3,9 @@ All materials belong to their original authors. 版权归原作者所有，本�
 
 | 材料 Material | Link |
 |---|---|
-| 10/20 课件 Slides: Agent-ready codebases | 官网暂未发布 Not published (as of 2026-10-25) |
+| 10/20 课件 Slides: Agent-ready codebases; background agent workflows | [Google Slides](https://docs.google.com/presentation/d/1yCxocmUrGIN7IrC42WB6NW08PtYYFLe1ombDj3Ay6_8/edit) |
 | 10/22 嘉宾 Guest: Eno Reyes (Factory CTO) | 未发课件 No slides published |
 | 阅读 Making Codebases Agent Ready (video) | [YouTube](https://www.youtube.com/watch?v=ShuJ_CN6zr4) |
 | 阅读 Making Ergonomic Repositories | [X](https://x.com/trybasis/status/2056881705269580023) |
+| 课上演示 Demo: Factory Agent Readiness | [factory.ai](https://factory.ai/news/agent-readiness) · [kodustech/agent-readiness](https://github.com/kodustech/agent-readiness) |
+| 嘉宾相关访谈 Related interview: Eno Reyes | [YouTube](https://youtu.be/pHGGlrKSnJ8) |

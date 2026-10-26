@@ -6,13 +6,52 @@
 
 | 材料 Material | 链接 Link |
 |---|---|
-| 10/20 课件 Slides | 官网暂未发布 Not published yet |
+| 10/20 课件 Slides | [Google Slides](https://docs.google.com/presentation/d/1yCxocmUrGIN7IrC42WB6NW08PtYYFLe1ombDj3Ay6_8/edit) |
 | 10/22 嘉宾 Guest (Eno Reyes, Factory) | 未发课件 No slides published |
 | 文字稿 / 视频 Transcripts / Video | 官网暂未发布 Not published yet |
 | 阅读 Readings | [Making Codebases Agent Ready (YouTube)](https://www.youtube.com/watch?v=ShuJ_CN6zr4) · [Making Ergonomic Repositories (X)](https://x.com/trybasis/status/2056881705269580023) |
 | 全部链接 All links | [links.md](../links.md) |
 
-截至 2026-10-26（北京时间），官网还没有发布本周两讲的课件和文字稿，这里只有官网大纲里的主题和阅读材料。材料发布后会按课程顺序补全。英文版：[../en/notes.md](../en/notes.md)。
+10/20 课件已于 2026-10-26 前后发布，下面按课件顺序整理；10/22 嘉宾讲座和两讲的文字稿官网暂未发布。英文版：[../en/notes.md](../en/notes.md)。
+
+## 第 9 讲｜10/20：打造适合代理的仓库 + 后台编程代理工作流
+
+### 1. 课程事务（Logistics）
+- 作业 4 周日截止；期中问卷；周四嘉宾 Eno Reyes（STLC 111）。
+
+### 2. 为什么（Why）
+- 如今大多数代码库并没有为代理的成功做好准备；模型的很多困惑，来自在凌乱或不完整的开发环境里完成任务。
+- 目标：优化代码库和环境，让人和代理都能看懂发生了什么。
+
+### 3. 人能绕过的 vs 让代理失败的
+| 缺陷 | 人的办法 | 对代理的影响 |
+|---|---|---|
+| 测试不足 | 手动测试 | 无法验证正确性 |
+| 文档过时 / 无规范 | 问同事 | 无法保证一致性 |
+| 没有 linter | 自己看 | 风格漂移 |
+| 构建不稳定 | 重试 | 无法验证改动 |
+| 配置复杂 | 问同事 | 环境不可复现 |
+| 缺少可观测性 | 翻日志 | 无法调试 |
+| 没有安全扫描 | 先不管 | 引入漏洞 |
+| 写法不统一 | 隐性经验 | 学到错误模式 |
+
+课件备注：凌乱可以很简单，比如访问数据库有多种写法、变量命名不一、多个函数做同一件事。
+
+### 4. 代理就绪环境清单
+足够的测试覆盖；封闭（hermetic）构建；有文档且一致的设计模式；没有过时的 README；可验证的检查；写给代理的操作手册（AGENTS.md 等）。
+
+### 5. 就绪之后能做什么
+大任务（迁移等）；团队多人运行多个代理；自动代码审查；结果可验证的长时间任务；在老代码库上用代理。
+
+### 6. 演示：代理就绪度
+Factory Agent Readiness（见 [links.md](../links.md)）；开源替代 kodustech/agent-readiness。
+
+### 7. 后台编程代理工作流
+- 能力演进：Tab 补全（2021，约 15% 效率提升）→ 同步单任务（2024，约 25–35%）→ 后台多任务（2026+，有望 2 倍以上）。
+- 后台代理的前提：和上面的就绪清单几乎相同，外加隔离的开发环境。
+- 隔离方式：git worktree；多代理编排工具（Conductor、Cursor 并行代理、Claude Code 多代理、自己写），优点是省去底层配置，缺点是界面可能死板、数据库和端口等共享资源没完全隔离；云端代理，可从浏览器、代码审查平台、聊天工具、手机、任务系统里启动。
+
+教材对应章节：[第 5 章 让代码库适合代理](../../../book/zh/05-让代码库适合代理.md)。
 
 ## 本周主题（官网课程大纲）
 - **10/20 周二**：代码库的“代理就绪度（agent readiness）”。

@@ -6,6 +6,8 @@ This book reorganizes the ten weeks of Stanford CS146S (The Modern Software Deve
 
 Looking for a specific date? See the [Learning Path](../../LEARNING_PATH.en.md).
 
+**Appendix: weekly notes.** The original slide-order notes stay in [weeks/](../../weeks/) ([Week 1](../../weeks/week01/en/00_index.md) · [Week 2](../../weeks/week02/en/notes.md) · [Week 3](../../weeks/week03/en/notes.md) · [Week 4](../../weeks/week04/en/notes.md) · [Week 5](../../weeks/week05/en/notes.md)) for tracing back to the slides page by page.
+
 ```mermaid
 flowchart LR
   A[Ch 1<br/>How agents work] --> B[Ch 2-3<br/>Context & capabilities]
@@ -17,11 +19,11 @@ flowchart LR
 
 | Ch | Title | Course weeks | Status |
 |---|---|---|---|
-| 1 | How Coding Agents Work | Week 1 (9/22, 9/24) | Done |
-| 2 | Context Engineering and Spec-Driven Development | Week 2 (9/29) | Rewriting |
-| 3 | Tools and Capabilities: MCP and Skills | Week 2 (10/1), Week 3 (10/6, 10/8) | Rewriting |
-| 4 | Customizing Your Agent | Week 4 (10/13, 10/15) | Rewriting |
-| 5 | Agent-Ready Codebases | Week 5 (10/20, 10/22) | Rewriting |
+| 1 | [How Coding Agents Work](01-how-coding-agents-work.md) | Week 1 (9/22, 9/24) | Done |
+| 2 | [Context Engineering and Spec-Driven Development](02-context-engineering-and-spec-driven-development.md) | Week 2 (9/29) | Done |
+| 3 | [Tools and Capabilities: MCP and Skills](03-tools-and-capabilities-mcp-and-skills.md) | Week 2 (10/1), Week 3 (10/6, 10/8) | Done |
+| 4 | [Customizing Your Agent](04-customizing-your-agent.md) | Week 4 (10/13, 10/15) | Done |
+| 5 | [Agent-Ready Codebases](05-agent-ready-codebases.md) | Week 5 (10/20, 10/22) | Done |
 | 6 | Agentic Code Review | Week 6 (10/27, 10/29) | Coming |
 | 7 | Security in AI Codebases | Week 7 (11/3, 11/5) | Coming |
 | 8 | Background Agents | Week 8 (11/10, 11/12) | Coming |
