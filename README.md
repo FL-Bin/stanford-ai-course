@@ -10,7 +10,7 @@
 两版都是**我们自己写的转述和讲解**，不是课件、文字稿或论文的原文。所有原始材料都在每周的 `links.md` 里链接到官方地址。
 
 ## 阅读说明
-笔记用三种样式区分内容来源（第 1 周已按此格式整理，其余各周陆续改版）：
+笔记用三种样式区分内容来源：
 - **正文**：课程内容。按原课件/课堂顺序做贴近原意的精译讲解，不是逐字翻译。
 - **蓝色 `[!NOTE]` 框，标题「补充」**：补充，不是课程内容。我们自己加的理解、练习和延伸。
 - **普通灰色引用**：课程原文引用，附出处。一两句关键英文原话 + 中文翻译 + 出处（如「—— 第 1 讲课件」）。
@@ -62,7 +62,7 @@ Bilingual (Chinese + English) study notes for Stanford **CS146S: The Modern Soft
 Each week has two versions of the same notes: `zh/` (Chinese, key terms and prompts kept bilingual) and `en/` (English). Both are **our own paraphrase and commentary**, not the slides, transcripts or papers. Every original material is linked to its official source in that week's `links.md`.
 
 ### How to read
-Notes use three styles (week 1 already follows this; other weeks will be converted):
+Notes use three styles:
 - **Body text** — course content, following the lecture order, in our own words.
 - **Blue `[!NOTE]` boxes titled "Supplement"** — supplements, not course content: our own explanations, exercises, and extensions.
 - **Plain gray blockquotes** — original course quotes with a source: one or two original sentences, a Chinese translation, and a source line.
