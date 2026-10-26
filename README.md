@@ -12,8 +12,8 @@
 ## 阅读说明
 笔记用三种样式区分内容来源（第 1 周已按此格式整理，其余各周陆续改版）：
 - **正文**：课程内容。按原课件/课堂顺序做贴近原意的精译讲解，不是逐字翻译。
-- **蓝色 `[!NOTE]` 框**：原文短引。一两句关键英文原话 + 中文翻译 + 出处（如「—— 第 1 讲课件」）。
-- **橙色 `[!WARNING]` 框，标题「补充」**：课程里没有、我们自己加的理解、练习和延伸。
+- **蓝色 `[!NOTE]` 框，标题「补充」**：补充，不是课程内容。我们自己加的理解、练习和延伸。
+- **普通灰色引用**：课程原文引用，附出处。一两句关键英文原话 + 中文翻译 + 出处（如「—— 第 1 讲课件」）。
 
 每篇笔记开头都有「官方材料 / Official materials」表，列出课件、视频、文字稿、阅读的官方链接。
 
@@ -64,8 +64,8 @@ Each week has two versions of the same notes: `zh/` (Chinese, key terms and prom
 ### How to read
 Notes use three styles (week 1 already follows this; other weeks will be converted):
 - **Body text** — course content, following the lecture order, in our own words.
-- **Blue `[!NOTE]` boxes** — short quotes: one or two original sentences with a Chinese translation and the source.
-- **Orange `[!WARNING]` boxes titled "Supplement"** — our own additions that are not in the course.
+- **Blue `[!NOTE]` boxes titled "Supplement"** — supplements, not course content: our own explanations, exercises, and extensions.
+- **Plain gray blockquotes** — original course quotes with a source: one or two original sentences, a Chinese translation, and a source line.
 
 Each note starts with an "官方材料 / Official materials" table linking the official slides, video, transcript and readings.
 

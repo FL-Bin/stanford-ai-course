@@ -15,7 +15,7 @@ Analyzes Claude Code's publicly available TypeScript source and compares it with
 ## Main finding
 The core is a simple while loop (call model → run tools → repeat); **most of the code is the system around the loop**.
 
-> [!WARNING]
+> [!NOTE]
 > **Supplement**
 > This matches notes 03–04.
 
@@ -41,6 +41,6 @@ Deny by default and escalate to a human · graduated trust · defense in depth �
 ## Notable
 Cited longitudinal data: auto-approve rates rise with experience (~20% early to 40%+ after many sessions) — trust is built over time. The paper ends with six open directions.
 
-> [!WARNING]
+> [!NOTE]
 > **Supplement**
 > Reading order: §1–3 first, then §5 (permissions), §6 (extensions), §7 (context), §8 (subagents).

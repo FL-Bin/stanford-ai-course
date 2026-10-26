@@ -48,6 +48,6 @@ Near the context limit, summarize the run and replace history with the summary; 
 ## 12. Principles of effective harnesses
 Simplicity (fewer, more powerful tools such as SQL or bash); mind the context window and avoid the "dumb zone" caused by tool bloat; expect prompts to keep changing, so keep them easy to adjust.
 
-> [!WARNING]
+> [!NOTE]
 > **Supplement**
 > Self-check: name the eight parts and say which ones sit in context permanently and which load on demand.

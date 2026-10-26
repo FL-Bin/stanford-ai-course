@@ -35,6 +35,6 @@ Instructor Mihail Eric (Head of AI at Monaco; earlier LLM work at Amazon Alexa; 
 ## 7. Building Claude Code in ~200 lines
 The point of the slide: it is simple. Read terminal input and append it to the conversation; tell the model which tools exist (`Read_file`, `List_dir`, `Edit_file`); when it asks for one, run it locally and send back the result. Then a live build from scratch — see [03](03_code_walkthrough_minimal_agent.md).
 
-> [!WARNING]
+> [!NOTE]
 > **Supplement**
 > Agent = loop + tools. Self-check: can you explain "good context → good code", and draw the user → harness → model → tools → result loop?

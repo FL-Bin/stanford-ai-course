@@ -21,7 +21,6 @@
 
 ## 1. system_prompt.md（系统提示词）
 
-> [!NOTE]
 > "You are an interactive agent that helps users with software engineering tasks."
 > 你是一个帮助用户完成软件工程任务的交互式代理。
 > —— 9/24 提示词文件夹 system_prompt.md 第 1 行
@@ -36,7 +35,7 @@
 7. **# Environment**：可用模型列表等。
 8. **# Context management**：上下文会被自动汇总，不用急着收尾；信息够了就动手，给推荐而不是罗列所有选项。
 
-> [!WARNING]
+> [!NOTE]
 > **补充**
 > 写自己的 skill 或 CLAUDE.md 时可以借鉴这份提示词的写法：**短、分区、讲原则**。
 
@@ -56,7 +55,6 @@
 
 ## 3. config_files.md（配置文件注入）
 
-> [!NOTE]
 > "IMPORTANT: These instructions OVERRIDE any default behavior and you MUST follow them exactly as written."
 > 重要：这些指令覆盖任何默认行为，你必须严格照写执行。
 > —— 9/24 提示词文件夹 config_files.md
@@ -64,7 +62,7 @@
 - 开头是上面这段固定说明，后面是 CLAUDE.md 全文。
 - 以演示用的 todo 项目为例，CLAUDE.md 包括：Project Overview（项目概述）、Project Structure（目录树）、Running the Application（运行命令）、Code Style（类型注解、用 dataclass、函数单一职责）。
 
-> [!WARNING]
+> [!NOTE]
 > **补充**
 > 这份 CLAUDE.md 可以当作一个“够用不过量”的模板来参考。
 
@@ -75,7 +73,7 @@
 - **Phase 2 设计**：派 Plan 子代理（最多 3 个），简单任务可跳过。
 - 之后是审查、写最终计划、调用 ExitPlanMode 提交给用户审批。
 
-> [!WARNING]
+> [!NOTE]
 > **补充**
 > 可以照这个结构写自己的“先计划后执行”skill。
 
@@ -86,7 +84,7 @@
 - **要覆盖的内容**：复杂度、100/1k/10k 规模下实测、并发与数据完整性、数据无限增长、按影响排序的建议。
 - **输出格式**：汇总表 + 实测表 + 带 `file:line` 的详细发现 + 建议；实测事实和推断分开写。
 
-> [!WARNING]
+> [!NOTE]
 > **补充**
 > 好的子代理任务书 = 目标 + 禁区 + 已知背景 + 交付格式。给 Claude Code 派活时可以照着写。
 
@@ -96,6 +94,6 @@
 - summary 的固定章节：用户的主要请求与意图、关键技术概念、文件与代码片段、错误与修复、问题解决、全部用户消息、待办任务、当前工作、下一步。
 - 特别强调：安全相关的约束要逐字保留（verbatim）；只有真正来自用户的消息才算用户消息。
 
-> [!WARNING]
+> [!NOTE]
 > **补充**
 > 手动 `/compact` 或写交接文档时，可以照这份清单来写。

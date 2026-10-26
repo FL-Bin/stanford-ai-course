@@ -26,7 +26,7 @@ Runs on Python 3.12+ with `openai` and `python-dotenv`, using the Responses API.
 4. **Parsing:** scan for `tool:` lines, split off the name, decode the JSON, skip malformed lines.
 5. **Loop:** append user input; call the model; if no tool calls, print and wait; otherwise run each tool, append `tool_result(...)` as a user message, and call the model again.
 
-> [!WARNING]
+> [!NOTE]
 > **Supplement**
 > - Tool calling here is plainly a text protocol, and `edit_file_tool` mirrors Claude Code's exact-string `Edit` tool.
 > - The conversation only grows, which is why compaction matters later.

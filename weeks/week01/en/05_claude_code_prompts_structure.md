@@ -16,6 +16,6 @@ The instructor captured these prompts in class. They are not reproduced here; we
 5. **subagent_prompt.md** — a performance-analysis brief: constraints, per-file background, required coverage, output format separating measurements from inference.
 6. **compaction_prompt.md** — text only, no tools; `<analysis>` then `<summary>` with fixed sections; keep safety constraints verbatim.
 
-> [!WARNING]
+> [!NOTE]
 > **Supplement**
 > Reusable patterns: keep prompts short and sectioned; a good subagent brief = goal + no-go zones + known context + deliverable format; use the compaction checklist for your own handoff notes.

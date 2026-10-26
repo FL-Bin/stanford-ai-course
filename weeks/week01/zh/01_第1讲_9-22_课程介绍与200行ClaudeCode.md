@@ -11,7 +11,7 @@
 | 课程官网 Course site | [themodernsoftware.dev](https://themodernsoftware.dev/) |
 
 
-> 下面按课件顺序整理。正文是课程内容的精译讲解，蓝色框是原文短引，绿色框是我们的补充。
+> 下面按课件顺序整理。正文是课程内容的精译讲解，灰色引用是课程原文（附出处），蓝色框是我们的补充。
 
 ## 1. 2026 年的现状（State of the World: 2026）
 课件这一页是图表，没有文字要点，讲的是 AI 写代码在行业里的普及程度。
@@ -24,7 +24,6 @@
 
 ## 3. 这门课讲原则，不讲工具
 
-> [!NOTE]
 > "This class is about principles not tools"
 > 这门课讲的是原则，而不是工具。
 > —— 第 1 讲课件
@@ -44,7 +43,6 @@
    - 防止 **AI slop**（AI 生成的低质量内容）。
 3. **大胆实验（Experiment aggressively）**。
 
-> [!NOTE]
 > "If you can't understand your codebase, neither will an LLM"
 > 如果你理解不了自己的代码库，大模型也理解不了。
 > —— 第 1 讲课件「The Takeaway」
@@ -70,7 +68,7 @@
    - 工具：`Read_file`（读文件）、`List_dir`（列目录）、`Edit_file`（改文件）。
 3. 然后现场从零写一个编程代理（Let's build a coding agent from scratch!），代码逐段讲解见 [03_代码讲解](03_代码讲解_约200行的编程代理.md)。
 
-> [!WARNING]
+> [!NOTE]
 > **补充**
 > 整讲可以压缩成一句：**代理 = 一个循环 + 一组工具**。模型不再请求工具时，就输出最终回答，等下一次用户输入。
 >
