@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build CS146S-notes-zh.pdf / CS146S-notes-en.pdf from the notes, in learning-path order.
 
-Usage: python3 scripts/build_pdf.py [outdir]   (needs: pip install weasyprint markdown; fonts-noto-cjk)
+Usage: python3 scripts/build_pdf.py [outdir]   (needs: pip install weasyprint markdown; Noto Sans SC or fonts-noto-cjk)
 Only our own notes are included; no course slides or transcripts.
 """
 import datetime, glob, html, os, re, sys
@@ -78,14 +78,14 @@ CSS = """
 @page { size: A4; margin: 20mm 18mm 20mm 18mm;
   @bottom-center { content: counter(page); font-size: 9pt; color: #666; } }
 @page cover { @bottom-center { content: none; } }
-html { font-family: "Noto Serif CJK SC", "Noto Sans CJK SC", serif; font-size: 10.5pt; line-height: 1.65; color: #222; }
-h1, h2, h3, h4 { font-family: "Noto Sans CJK SC", sans-serif; color: #1F5FA8; line-height: 1.3; }
+html { font-family: "Noto Sans SC", "Noto Serif CJK SC", "Noto Sans CJK SC", sans-serif; font-size: 10.5pt; line-height: 1.65; color: #222; font-weight: 400; }
+h1, h2, h3, h4 { font-family: "Noto Sans SC", "Noto Sans CJK SC", sans-serif; font-weight: 700; color: #1F5FA8; line-height: 1.3; }
 h1 { font-size: 20pt; border-bottom: 2px solid #1F5FA8; padding-bottom: 4pt; }
 h2 { font-size: 14pt; } h3 { font-size: 12pt; } h4 { font-size: 11pt; }
 h3, h4, h5, h6 { bookmark-level: none; }
 .chapter { page-break-before: always; }
 a { color: #1F5FA8; text-decoration: none; word-break: break-all; }
-code { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 9pt; background: #f3f4f6; padding: 0 2pt; }
+code { font-family: "Noto Sans SC", "Noto Sans Mono CJK SC", monospace; font-weight: 400; font-size: 9pt; background: #f3f4f6; padding: 0 2pt; }
 pre { background: #f6f8fa; padding: 6pt 8pt; border-radius: 4pt; white-space: pre-wrap; font-size: 8.5pt; }
 pre code { background: none; padding: 0; }
 table { border-collapse: collapse; width: 100%; font-size: 9pt; margin: 6pt 0; }

@@ -23,21 +23,42 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Install fonts and system libs
-        timeout-minutes: 10
+      - name: Install system libs
+        timeout-minutes: 5
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          # skip slow man-db triggers on hosted runners
+          # fonts-noto-cjk from the Azure apt mirror stalls; fonts are fetched below.
           echo 'set man-db/auto-update false' | sudo debconf-communicate >/dev/null 2>&1 || true
           sudo rm -f /var/lib/man-db/auto-update
+          printf 'Acquire::http::Timeout "30";\nAcquire::Retries "3";\n' | sudo tee /etc/apt/apt.conf.d/99timeout >/dev/null
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends fonts-noto-cjk libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0
+          sudo apt-get install -y --no-install-recommends libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0 fontconfig
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install Python deps
-        run: pip install weasyprint markdown
+        run: pip install weasyprint markdown fonttools
+      - name: Install Noto Sans SC
+        timeout-minutes: 5
+        run: |
+          curl -fsSL --retry 5 --retry-all-errors --retry-delay 2 \
+            -o /tmp/NotoSansSC-VF.ttf \
+            https://raw.githubusercontent.com/notofonts/noto-cjk/Sans2.004/Sans/Variable/TTF/Subset/NotoSansSC-VF.ttf
+          python - << 'PY'
+          from fontTools.ttLib import TTFont
+          from fontTools.varLib.instancer import instantiateVariableFont
+          src = "/tmp/NotoSansSC-VF.ttf"
+          for wght, dest in ((400, "/tmp/NotoSansSC-Regular.ttf"), (700, "/tmp/NotoSansSC-Bold.ttf")):
+              font = TTFont(src)
+              instantiateVariableFont(font, {"wght": wght}, inplace=True, updateFontNames=True)
+              font.save(dest)
+              print("wrote", dest)
+          PY
+          mkdir -p "$HOME/.local/share/fonts/noto"
+          cp /tmp/NotoSansSC-Regular.ttf /tmp/NotoSansSC-Bold.ttf "$HOME/.local/share/fonts/noto/"
+          fc-cache -f
+          fc-list "Noto Sans SC" family style | grep -q "Noto Sans SC"
       - name: Build PDFs
         run: bash scripts/build_pdf.sh dist
       - name: Publish to rolling release pdf-latest
