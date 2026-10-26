@@ -1,0 +1,46 @@
+name: Build PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "weeks/**"
+      - "LEARNING_PATH*"
+      - "scripts/**"
+      - ".github/workflows/build-pdf.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pdf
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install fonts and system libs
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python deps
+        run: pip install weasyprint markdown
+      - name: Build PDFs
+        run: bash scripts/build_pdf.sh dist
+      - name: Publish to rolling release pdf-latest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          NOTES="自动生成的最新 PDF（${GITHUB_SHA::7}，$(date -u +%Y-%m-%d)）。Auto-built latest PDFs. Unofficial notes, CC BY-NC-SA 4.0."
+          if ! gh release view pdf-latest >/dev/null 2>&1; then
+            gh release create pdf-latest --title "PDF（最新 / latest）" --notes "$NOTES" --target "$GITHUB_SHA"
+          else
+            gh release edit pdf-latest --notes "$NOTES"
+          fi
+          gh release upload pdf-latest dist/CS146S-notes-zh.pdf dist/CS146S-notes-en.pdf --clobber

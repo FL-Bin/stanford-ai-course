@@ -2,6 +2,8 @@
 
 **简体中文** | [English](README.en.md)
 
+📚 **[学习路线](LEARNING_PATH.md)**：按上课顺序列出每节课的笔记、官方课件和阅读 · 📄 **整本 PDF 下载**：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf)（随笔记更新自动生成）
+
 > 斯坦福 CS146S《The Modern Software Developer》的**非官方**学习笔记，与斯坦福大学及课程团队**无任何关联**。课程官网：<https://themodernsoftware.dev/>
 > Unofficial notes for Stanford CS146S — **not affiliated with Stanford University** or the course staff. English version: [README.en.md](README.en.md)
 

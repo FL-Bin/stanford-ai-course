@@ -2,6 +2,8 @@
 
 [简体中文](README.md) | **English**
 
+📚 **[Learning path](LEARNING_PATH.en.md)**: every lecture in class order with our notes, official slides and readings · 📄 **Download as PDF**: [中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf) (rebuilt automatically when notes change)
+
 > **Unofficial** study notes for Stanford CS146S *The Modern Software Developer*, **not affiliated with Stanford University** or the course staff. Course site: <https://themodernsoftware.dev/>
 
 These are notes I take while studying Stanford CS146S (instructor Mihail Eric). Each week has two versions:
