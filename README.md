@@ -1,7 +1,7 @@
-# Stanford CS146S《The Modern Software Developer》中英双语学习笔记（Fall 2026）
+# 斯坦福 AI 课程（中英双语笔记）｜Stanford AI Course
 
-> **非官方**学习笔记，与斯坦福大学及课程团队**无任何关联**。课程官网：<https://themodernsoftware.dev/>
-> Unofficial study notes — **not affiliated with Stanford University** or the course staff. [English below ↓](#english)
+> 斯坦福 CS146S《The Modern Software Developer》的**非官方**学习笔记，与斯坦福大学及课程团队**无任何关联**。课程官网：<https://themodernsoftware.dev/>
+> Unofficial notes for Stanford CS146S — **not affiliated with Stanford University** or the course staff. [English below ↓](#english)
 
 这是我一边学习斯坦福 CS146S（主讲 Mihail Eric）一边整理的笔记，每周两个版本：
 - `zh/`：中文笔记，关键术语和提示词保留中英双语；
@@ -47,7 +47,7 @@ weeks/weekNN/
 
 ---
 <a id="english"></a>
-## English
+## Stanford AI Course — bilingual notes for CS146S The Modern Software Developer
 
 Bilingual (Chinese + English) study notes for Stanford **CS146S: The Modern Software Developer**, Fall 2026 (instructor Mihail Eric). Official site: <https://themodernsoftware.dev/>.
 
