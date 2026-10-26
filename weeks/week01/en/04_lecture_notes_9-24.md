@@ -1,5 +1,7 @@
 # 9/24 lecture notes (transcript order)
 
+[中文](../zh/04_文字稿笔记_9-24_现代编程代理解剖.md) | **English**
+
 ## 官方材料 / Official materials
 | Material | Link |
 |---|---|

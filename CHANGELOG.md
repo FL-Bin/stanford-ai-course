@@ -2,6 +2,8 @@
 日期为北京时间 / Dates in Beijing time (UTC+8).
 
 ## 2026-10-26
+- 新增中英文切换：英文首页 README.en.md，每篇笔记顶部可一键切换到另一语言版本。
+  Added language switcher: English README (README.en.md) and a 中文 | English link at the top of every note.
 - 第 2–5 周笔记改版：每篇开头加官方材料表，正文按课件顺序精译讲解，原文短引用引用块，补充内容放进「补充」框。
   Weeks 2–5 restyled: official-materials tables, lecture-order notes, short sourced quotes, our additions in Supplement boxes.
 

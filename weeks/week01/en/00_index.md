@@ -1,5 +1,7 @@
 # Week 1 · The Internals of Coding Agents
 
+[中文](../zh/00_本周索引.md) | **English**
+
 ## 官方材料 / Official materials
 | Material | Link |
 |---|---|

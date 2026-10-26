@@ -1,5 +1,7 @@
 # 第 4 周｜定制你的代理和代码仓库（Customizing Your Agent and Repository）
 
+**中文** | [English](../en/notes.md)
+
 ## 官方材料 / Official materials
 
 | 材料 Material | 链接 Link |

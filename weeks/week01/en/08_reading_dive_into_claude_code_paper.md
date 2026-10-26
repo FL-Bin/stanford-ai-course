@@ -1,4 +1,6 @@
 # Reading · Dive into Claude Code (paper)
+
+[中文](../zh/08_阅读_Dive_into_Claude_Code_论文.md) | **English**
 *Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems* — Liu, Zhao, Shang, Shen (MBZUAI VILA Lab / UCL), arXiv:2604.14228. 
 
 ## 官方材料 / Official materials

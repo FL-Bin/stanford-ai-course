@@ -1,5 +1,7 @@
 # 第 5 周｜让代码库适合代理协作（Agent-Ready Codebases）
 
+**中文** | [English](../en/notes.md)
+
 ## 官方材料 / Official materials
 
 | 材料 Material | 链接 Link |

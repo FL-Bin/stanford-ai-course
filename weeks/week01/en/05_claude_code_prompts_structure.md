@@ -1,5 +1,7 @@
 # Claude Code internal prompts (6 files): structure
 
+[中文](../zh/05_提示词合集_ClaudeCode框架拆解.md) | **English**
+
 ## 官方材料 / Official materials
 | Material | Link |
 |---|---|

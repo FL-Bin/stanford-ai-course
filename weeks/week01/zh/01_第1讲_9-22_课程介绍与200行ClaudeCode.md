@@ -1,5 +1,7 @@
 # 第 1 讲｜9/22：课程介绍 + 用约 200 行代码写一个 Claude Code
 
+**中文** | [English](../en/01_lecture_9-22_intro_and_minimal_agent.md)
+
 ## 官方材料 / Official materials
 | 材料 Material | 链接 Link |
 |---|---|

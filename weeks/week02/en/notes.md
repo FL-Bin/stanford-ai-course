@@ -1,5 +1,7 @@
 # Week 2 · Advanced Context Engineering
 
+[中文](../zh/notes.md) | **English**
+
 ## 官方材料 / Official materials
 
 | 材料 Material | 链接 Link |

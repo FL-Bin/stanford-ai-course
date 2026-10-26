@@ -1,7 +1,9 @@
 # 斯坦福 AI 课程（中英双语笔记）｜Stanford AI Course
 
+**简体中文** | [English](README.en.md)
+
 > 斯坦福 CS146S《The Modern Software Developer》的**非官方**学习笔记，与斯坦福大学及课程团队**无任何关联**。课程官网：<https://themodernsoftware.dev/>
-> Unofficial notes for Stanford CS146S — **not affiliated with Stanford University** or the course staff. [English below ↓](#english)
+> Unofficial notes for Stanford CS146S — **not affiliated with Stanford University** or the course staff. English version: [README.en.md](README.en.md)
 
 这是我一边学习斯坦福 CS146S（主讲 Mihail Eric）一边整理的笔记，每周两个版本：
 - `zh/`：中文笔记，关键术语和提示词保留中英双语；
@@ -53,30 +55,3 @@ weeks/weekNN/
 - 如果权利人认为某处内容不妥，请提 issue，我会尽快修改或删除。
 - 本仓库的笔记（仅限我们自己撰写的内容）采用 [CC BY-NC-SA 4.0](LICENSE) 许可，**该许可不适用于任何被链接的原始材料**。
 
----
-<a id="english"></a>
-## Stanford AI Course — bilingual notes for CS146S The Modern Software Developer
-
-Bilingual (Chinese + English) study notes for Stanford **CS146S: The Modern Software Developer**, Fall 2026 (instructor Mihail Eric). Official site: <https://themodernsoftware.dev/>.
-
-Each week has two versions of the same notes: `zh/` (Chinese, key terms and prompts kept bilingual) and `en/` (English). Both are **our own paraphrase and commentary**, not the slides, transcripts or papers. Every original material is linked to its official source in that week's `links.md`.
-
-### How to read
-Notes use three styles:
-- **Body text** — course content, following the lecture order, in our own words.
-- **Blue `[!NOTE]` boxes titled "Supplement"** — supplements, not course content: our own explanations, exercises, and extensions.
-- **Plain gray blockquotes** — original course quotes with a source: one or two original sentences, a Chinese translation, and a source line.
-
-Each note starts with an "官方材料 / Official materials" table linking the official slides, video, transcript and readings.
-
-### Progress
-Weeks 1–4 are done (the week-4 guest lecture awaits official materials); week 5 is partial because its slides aren't published yet; weeks 6–10 will be added as the course releases them (expected to finish in early December 2026). See the table above and [CHANGELOG.md](CHANGELOG.md).
-
-### How to use
-Open a week, start with `links.md` for the official materials, then read the notes in `zh/` or `en/`. Self-checks and exercises sit in the Supplement boxes.
-
-### Disclaimer
-- Unofficial personal study notes. **Not affiliated with, reviewed or endorsed by Stanford University**, the CS146S staff, or guest speakers' companies.
-- All original materials (slides, transcripts, sample code, prompt files, papers, readings) **belong to their authors**. This repo does not redistribute them; it only links to official sources.
-- Rights holders who have concerns: please open an issue and I will fix or remove the content promptly.
-- Our own notes are licensed under [CC BY-NC-SA 4.0](LICENSE). **The license covers only our notes, not any linked material.**

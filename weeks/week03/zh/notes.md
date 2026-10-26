@@ -1,5 +1,7 @@
 # 第 3 周｜Agent Skills 与命令行（Agent Skills and CLI）
 
+**中文** | [English](../en/notes.md)
+
 ## 官方材料 / Official materials
 
 | 材料 Material | 链接 Link |

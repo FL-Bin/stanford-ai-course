@@ -1,5 +1,7 @@
 # Lecture 2 · 9/24: The Anatomy of a Modern Coding Agent
 
+[中文](../zh/02_第2讲_9-24_现代编程代理解剖.md) | **English**
+
 ## 官方材料 / Official materials
 | Material | Link |
 |---|---|

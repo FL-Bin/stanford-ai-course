@@ -1,5 +1,7 @@
 # 讲义 06｜阅读 1：Building a Coding Agent（视频）
 
+**中文** | [English](../en/06_reading_building_a_coding_agent_video.md)
+
 ## 官方材料 / Official materials
 | 材料 Material | 链接 Link |
 |---|---|

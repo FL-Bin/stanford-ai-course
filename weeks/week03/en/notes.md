@@ -1,5 +1,7 @@
 # Week 3 · Agent Skills and CLI
 
+[中文](../zh/notes.md) | **English**
+
 ## 官方材料 / Official materials
 
 | 材料 Material | 链接 Link |

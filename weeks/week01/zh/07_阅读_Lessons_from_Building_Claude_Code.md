@@ -1,5 +1,7 @@
 # 讲义 07｜阅读 2：Lessons from Building Claude Code: Seeing like an Agent
 
+**中文** | [English](../en/07_reading_lessons_from_building_claude_code.md)
+
 ## 官方材料 / Official materials
 | 材料 Material | 链接 Link |
 |---|---|

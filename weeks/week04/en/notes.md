@@ -1,5 +1,7 @@
 # Week 4 · Customizing Your Agent and Repository
 
+[中文](../zh/notes.md) | **English**
+
 ## 官方材料 / Official materials
 
 | 材料 Material | 链接 Link |

@@ -1,5 +1,7 @@
 # Code walkthrough · claude_code_200lines.py
 
+[中文](../zh/03_代码讲解_约200行的编程代理.md) | **English**
+
 ## 官方材料 / Official materials
 | Material | Link |
 |---|---|

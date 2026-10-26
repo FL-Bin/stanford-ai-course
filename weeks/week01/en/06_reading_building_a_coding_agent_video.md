@@ -1,5 +1,7 @@
 # Reading · Building a Coding Agent (video)
 
+[中文](../zh/06_阅读_Building_a_Coding_Agent_视频.md) | **English**
+
 ## 官方材料 / Official materials
 | Material | Link |
 |---|---|

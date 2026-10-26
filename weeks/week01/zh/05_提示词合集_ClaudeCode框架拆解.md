@@ -1,5 +1,7 @@
 # 讲义 05｜提示词合集（Prompts 文件夹，6 个文件）：结构解读
 
+**中文** | [English](../en/05_claude_code_prompts_structure.md)
+
 ## 官方材料 / Official materials
 | 材料 Material | 链接 Link |
 |---|---|

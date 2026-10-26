@@ -1,5 +1,7 @@
 # Lecture 1 · 9/22: Course intro + Claude Code in ~200 lines
 
+[中文](../zh/01_第1讲_9-22_课程介绍与200行ClaudeCode.md) | **English**
+
 ## 官方材料 / Official materials
 | Material | Link |
 |---|---|

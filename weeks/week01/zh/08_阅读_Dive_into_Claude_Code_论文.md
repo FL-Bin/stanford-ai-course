@@ -1,4 +1,6 @@
 # 讲义 08｜阅读 3：Dive into Claude Code（论文）
+
+**中文** | [English](../en/08_reading_dive_into_claude_code_paper.md)
 *Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems*
 作者：Jiacheng Liu, Xiaohan Zhao, Xinyi Shang, Zhiqiang Shen（MBZUAI VILA Lab / UCL）
 arXiv:2604.14228v3（2026-10-10），共 55 页

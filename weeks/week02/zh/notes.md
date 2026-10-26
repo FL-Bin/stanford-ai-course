@@ -1,5 +1,7 @@
 # 第 2 周｜进阶上下文工程（Advanced Context Engineering）
 
+**中文** | [English](../en/notes.md)
+
 ## 官方材料 / Official materials
 
 | 材料 Material | 链接 Link |
