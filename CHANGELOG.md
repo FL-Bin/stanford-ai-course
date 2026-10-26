@@ -1,6 +1,10 @@
 # 更新记录 / Changelog
 日期为北京时间 / Dates in Beijing time (UTC+8).
 
+## 2026-10-26
+- 第 2–5 周笔记改版：每篇开头加官方材料表，正文按课件顺序精译讲解，原文短引用引用块，补充内容放进「补充」框。
+  Weeks 2–5 restyled: official-materials tables, lecture-order notes, short sourced quotes, our additions in Supplement boxes.
+
 ## 2026-10-25
 - 初始化仓库：README（中英）、许可证 CC BY-NC-SA 4.0、目录结构。
   Initial repo: bilingual README, CC BY-NC-SA 4.0 license, structure.

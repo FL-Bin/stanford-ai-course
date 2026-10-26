@@ -1,74 +1,74 @@
 # Week 4 · Customizing Your Agent and Repository
-> Our own study notes (paraphrase + commentary), not the slides. Official materials: [links.md](../links.md). Chinese version: [../zh/notes.md](../zh/notes.md).
-> No transcripts were published; the 10/15 guest talk (Boris Cherny) has no public slides, so there are no notes for it yet.
+
+## 官方材料 / Official materials
+
+| 材料 Material | 链接 Link |
+|---|---|
+| 10/13 课件 Slides | [Google Slides](https://docs.google.com/presentation/d/152VaUifBKH4T6hxd6fCKKM9kJTSAuBmkF8zSYwuTYAo/edit?usp=sharing) |
+| 10/15 嘉宾 Guest (Boris Cherny) | 未发课件 No slides published |
+| 文字稿 / 视频 Transcripts / Video | 官网暂未发布 Not published yet |
+| 课上示例 Example | [Next.js AGENTS.md](https://github.com/vercel/next.js/blob/canary/AGENTS.md) |
+| 阅读 Readings | [I Still Prefer MCP Over Skills](https://david.coffee/i-still-prefer-mcp-over-skills) · [AGENTS.md (Factory)](https://docs.factory.com/harness/agents-md) · [Steering Claude Code](https://claude.com/resources/articles/steering-claude-code-skills-hooks-rules-subagents-and-more) · [Writing a Good CLAUDE.md](https://hlyr.dev/blog/writing-a-good-claude-md) |
+| 全部链接 All links | [links.md](../links.md) |
+
+No transcripts were published; notes follow the public slides. The 10/15 guest lecture has no public slides yet. Chinese version: [../zh/notes.md](../zh/notes.md).
 
 ---
-## Lecture 7 · 10/13: Customizing your agent setup
-### Why customize
-- Getting the most out of coding agents means **taking control of your stack**; there are many customization mechanisms.
-- Four main ones: **agent behavior files (CLAUDE.md / AGENTS.md), hooks, skills, subagents** — plus MCP servers.
 
-### Extra MCP perks (adding to week 2)
-Seamless auth; easy versioning and updates; portability across clients; native sandboxing for remote MCP.
+## Lecture 7 · 10/13: Customizing Your Agent Setup
 
-### Writing a good AGENTS.md
-Treat it as **a README for the agent**. Suggested sections:
-1. Project overview (a map of the codebase)
-2. Build and test commands (e.g. "use maven, not gradle")
-3. Code style
-4. Testing instructions
-5. Security considerations
-6. Stack-specific gotchas (e.g. "React 18 + TypeScript, built with Vite")
+### 1. Logistics
+Project tech spec due Thursday; first OSS contribution due Sunday; Boris Cherny guest lecture; Thursday lectures move to STLC 111.
 
-Principles (paraphrased):
-- Keep instructions **broadly applicable**; **avoid code snippets** — they go stale.
-- **Mind the length** (the slides suggest under 300 lines).
-- Large repos: **nested config files**, with the root AGENTS.md acting as a router to deeper docs (e.g. "for API gateway design see docs/API-GATEWAY.md"). Services/team directories can have their own conventions.
-- Loading order: CLAUDE.md files load from the root to the nearest file, so **the most relevant instructions are read last**.
-- Real example shown: the Next.js repo's AGENTS.md.
-- The same principles apply to CLAUDE.md and similar files.
+### 2. APIs vs MCP vs Skills (recap)
+See [week 2](../../week02/en/notes.md).
 
-### Hooks
-- **Deterministic scripts** on predefined events: `PreToolUse`, `PostToolUse`, `UserPromptSubmit`, `PreCompact`, …
-- Uses: sanitize prompts; block sensitive actions; run linters/formatters on generated code; run tests when a task finishes.
-- Supported in Claude Code and Cursor.
+### 3. Additional MCP perks
+Seamless auth, easy versioning and updates, portability across clients, native sandboxing for remote MCP.
 
-### Skills / commands
-- Frequently used prompts as files the agent can run: run tests, create a plan, research, review code, verify output.
-- Examples mentioned: a "ship-it" command in Claude Code, Cursor's "deslop" command.
+### 4. Why customize
+Peak productivity with coding agents means owning your stack, and there are many levers.
 
-### Subagents
-- **Runtime delegation**: cleanly separate contexts for different work streams; only the final message comes back.
-- Name, description and tool list load at session start; invoked implicitly or explicitly.
-- Good for exploring a codebase, simplifying code after a change, end-to-end testing — **perfect for side tasks**.
-- Contrast: CLAUDE.md anchors behavior; subagents divide the work.
+### 5. Techniques
+Agent behavior files (CLAUDE.md / AGENTS.md), hooks, skills, subagents — with real examples.
 
-### Common MCP server types
-| Type | Examples | Use |
-|---|---|---|
-| Project management | Jira / Linear | Create/update issues, pull issue info and start tasks |
-| Documentation | Notion / Confluence | Create issues from feature specs |
-| Observability | Datadog / Sentry | Real-time production debugging |
-| Database | Redshift | Debug data issues, explore data layout |
-| Technical docs | Context7 | Avoid stale library definitions, fewer hallucinations |
-| Experiment tracking | Arize | Suggest new runs from test output |
+### 6. Designing an optimal AGENTS.md
 
-### The context story
-A request's context stacks up roughly as: system prompt → memory file → environment info → MCP tools → skills → global AGENTS.md → local AGENTS.md. Every layer spends your context budget.
+> "README for agent"
+> 写给代理看的 README。
+> —— Lecture 7 slides
+
+Sections: project overview (a map), build and test commands, code style, testing, security, stack-specific gotchas. Keep instructions broadly applicable, skip code snippets (they go stale), stay under ~300 lines, and in big repos use nested files with the root AGENTS.md as a router. Example: Next.js's AGENTS.md. CLAUDE.md loads from the root down to the nearest file, so the most specific instructions come last.
+
+### 7. Hooks
+Deterministic scripts on events such as `PreToolUse`, `PostToolUse`, `UserPromptSubmit`, `PreCompact`: sanitize prompts, block sensitive actions, run linters/formatters, run tests at the end. Supported in Claude Code and Cursor.
+
+### 8. Skills
+Frequently used prompts as files: run tests, plan, research, review, verify. Examples: Claude Code "ship-it", Cursor "deslop".
+
+### 9. Subagents
+Runtime delegation with separate contexts; only the final message returns; name, description and tools load at session start; implicit or explicit invocation. Good for exploring code, simplifying after a change, end-to-end testing — side tasks. CLAUDE.md, by contrast, anchors behavior.
+
+### 10. MCP server use cases
+Jira/Linear (issues), Notion/Confluence (issues from specs), Datadog/Sentry (production debugging), Redshift (data issues), Context7 (current library docs, fewer hallucinations), Arize (suggest new experiments from test runs).
+
+### 11. The context story
+System prompt → Memory.md → environment → MCP tools → skills → global AGENTS.md → local AGENTS.md.
+
+> [!NOTE]
+> **Supplement**
+> Every layer spends context budget; compare week 2's ½–¾ smart-token rule.
 
 ---
-## Lecture 8 · 10/15: Guest Boris Cherny (creator of Claude Code, Anthropic)
-No slides or transcript published yet; notes will follow.
+
+## Lecture 8 · 10/15: Guest Boris Cherny (Anthropic, Claude Code)
+No slides or transcript published yet.
 
 ---
-## Readings (pointers)
-- **I Still Prefer MCP Over Skills** — a counterpoint on MCP vs. skills.
-- **AGENTS.md (Factory docs)** — conventions for AGENTS.md.
-- **Steering Claude Code** — Anthropic's guide to skills, hooks, rules and subagents.
-- **Writing a Good CLAUDE.md** — how to write a good CLAUDE.md.
 
-## Exercises
-- [ ] Rewrite your project's AGENTS.md / CLAUDE.md with the six sections, under 300 lines
-- [ ] Add a `PostToolUse` hook that formats or tests after edits
-- [ ] Try a plan / implement / review split across three subagents
+## Readings
+I Still Prefer MCP Over Skills; AGENTS.md (Factory); Steering Claude Code; Writing a Good CLAUDE.md.
 
+> [!NOTE]
+> **Supplement**
+> Exercises: rewrite your AGENTS.md in the six-section shape under 300 lines; add a `PostToolUse` formatter/test hook; try a plan/implement/review subagent split.

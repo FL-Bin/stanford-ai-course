@@ -1,31 +1,26 @@
 # Week 5 · Agent-Ready Codebases
-> Our own study notes, not official material. Links: [links.md](../links.md). Chinese version: [../zh/notes.md](../zh/notes.md).
-> ⚠️ As of 2026-10-25 (Beijing time) the site **has not published** slides or transcripts for this week, so this page has only the topic outline, reading pointers and exercises. It will be completed when materials appear.
 
-## Topics (from the official syllabus)
-- **Tue 10/20**: repository agent readiness — what makes a codebase agent-friendly (structure, docs, tests, checks), how to score and audit it, common blockers.
-- **Thu 10/22**: guest Eno Reyes (Factory CTO).
+## 官方材料 / Official materials
 
-## Links to earlier weeks (our synthesis)
-- Week 2: good research docs and specs help agents onboard — a clear codebase makes that much easier.
-- Week 4: AGENTS.md, hooks and subagents are direct levers for agent readiness.
-
-## Agent-readiness self-check (ours, unofficial)
-| Area | Check |
+| 材料 Material | 链接 Link |
 |---|---|
-| Docs | AGENTS.md/CLAUDE.md with codebase map, build/test commands, style, gotchas; nothing stale |
-| Structure | Clear directories and module boundaries; consistent naming; nested docs in big repos |
-| Build | One command to install, one to run |
-| Tests | Fast tests the agent can run to verify its own changes |
-| Checks | Lint, format and type checks run automatically (hooks/CI) |
-| Feedback | Clear error messages the agent can act on |
+| 10/20 课件 Slides | 官网暂未发布 Not published yet |
+| 10/22 嘉宾 Guest (Eno Reyes, Factory) | 未发课件 No slides published |
+| 文字稿 / 视频 Transcripts / Video | 官网暂未发布 Not published yet |
+| 阅读 Readings | [Making Codebases Agent Ready (YouTube)](https://www.youtube.com/watch?v=ShuJ_CN6zr4) · [Making Ergonomic Repositories (X)](https://x.com/trybasis/status/2056881705269580023) |
+| 全部链接 All links | [links.md](../links.md) |
 
-## Readings (pointers)
-- **Making Codebases Agent Ready (video)**
-- **Making Ergonomic Repositories (X post)**
+As of 2026-10-26 (UTC+8) the site has not published this week's slides or transcripts; only the syllabus topics and readings are listed. Chinese version: [../zh/notes.md](../zh/notes.md).
 
-## Exercises
-- [ ] Watch the video and read the post
-- [ ] Score one of your repos with the checklist and fix the weakest area
-- [ ] Revisit when the slides are published
+## Topics (course syllabus)
+- **Tue 10/20:** agent readiness of a codebase.
+- **Thu 10/22:** guest Eno Reyes (Factory CTO).
 
+## Readings
+Making Codebases Agent Ready (video); Making Ergonomic Repositories (X post).
+
+> [!NOTE]
+> **Supplement**
+> Links to earlier weeks: research docs and specs (week 2) are easier on a clear codebase; AGENTS.md, hooks and subagents (week 4) are direct levers.
+> 
+> Unofficial readiness checklist: up-to-date AGENTS.md/CLAUDE.md · clear module boundaries · one-command setup and run · fast tests the agent can run · automated lint/format/type checks · error messages that point to the cause.

@@ -1,96 +1,115 @@
 # Week 2 · Advanced Context Engineering
-> Our own study notes (paraphrase + commentary), not the slides or transcripts. Official materials: [links.md](../links.md). Chinese version: [../zh/notes.md](../zh/notes.md).
 
----
-## Lecture 3 · 9/29: Advanced prompting and context engineering for complex codebases
-### Goals
-- Move from ad-hoc prompting to a **reliable synchronous AI development workflow**.
-- Use AI to onboard quickly to unfamiliar codebases and finish complex tasks systematically.
+## 官方材料 / Official materials
 
-### Why vibe coding is not enough
-- **Vibe coding** — accepting AI code without much thought — is fun for toys but breaks down in production codebases with thousands of files.
-- At scale you hit **context-window limits**; even million-token windows don't make every token equally "smart".
-- The instructor's view: production AI code needs a method, and you need a **working mental model** of how the solution will be built.
-- "Bad code" today means both wrong architecture decisions and functionally wrong code from hallucinations.
-
-### The RePPIT framework
-| Letter | Phase | What happens (our reading) | Artifact |
-|---|---|---|---|
-| R | Research | The agent distills the codebase into a structured research doc — modules, organization, where key code lives — **without dumping raw code into context** | Research doc |
-| P | Propose | ~2 options with trade-offs, grounded in the research (more than 2 has diminishing returns, per the instructor) | Proposals |
-| P | Plan | Detailed plan for the chosen option: files to change (like a diff preview), tests, observability, and **explicitly out-of-scope items** | Plan doc |
-| I | Implement | The agent implements the plan; this prompt is the simplest | Code |
-| T | Test | Unit, integration and smoke tests; optionally a review skill that checks architecture, style, consistency | Test/review report |
-
-Demo: adding a "spending by category over time" trend line to a Mint-like budgeting app, step by step; the instructor picked the lighter frontend-only option.
-
-### Practical advice (paraphrased)
-- **Context budget**: only roughly the first ½–¾ of the window is "smart"; past that is the joking "dumb zone". System prompt and AGENTS.md/CLAUDE.md already use some of it.
-- **Review specs carefully**; split big features into task lists; after each item, write up what the agent did as context for the next.
-- Existing docs: reuse if well maintained; stale docs are worse than none.
-- **Model choice**: strongest model for research/propose/plan, lighter models are fine for implement/test.
-- Unused proposals still occupy context — clear or compact. A cited compaction study suggests compacting somewhere around 250k–450k tokens depending on the model.
-- RePPIT is a starting point; adapt it to your domain.
-
-### Task delegation taxonomy
-1. Simple prompting — small changes
-2. Make a plan, then implement
-3. Research, then plan
-4. (Research then plan) × N — large features
-
-### Other spec-driven frameworks
-- **Superpowers**: an opinionated end-to-end, TDD-based workflow; a set of skills for specs/plans, implementation and testing, with built-in parallelism.
-- **OpenSpec**: a lighter spec/plan flow that tracks changes separately from the source-of-truth specs and merges them afterwards.
-- **Where specs live**: a tool like Linear, or in the repo under Git; design trade-offs can go in `.notes/`.
-
----
-## Lecture 4 · 10/1: MCP, tool calling, and beyond
-### Why MCP
-- Model knowledge is a **static snapshot** from training; autonomous systems need a robust way to bring in **dynamic data**.
-
-### What MCP is
-- **Model Context Protocol**: an open protocol for providing context/tools to models in a generalizable way — in short, **a standard format for exposing tools to LLMs**.
-- It turns **M×N** model-to-service connectors into **M+N**, avoids reimplementing auth/error handling/rate limiting, and standardizes output via JSON-RPC.
-
-### Terms and flow
-| Term | Meaning |
+| 材料 Material | 链接 Link |
 |---|---|
-| Host | The app, e.g. Cursor, Claude Desktop |
-| MCP client | Library inside the host; one stateful session per server |
-| MCP server | Lightweight wrapper in front of a tool/service |
-| Tool | A callable function (data source, API …) |
+| 9/29 课件 Slides | [Google Slides](https://docs.google.com/presentation/d/17brqoQQZHF3K82WgYaV6urAV3Q7iIwyGUBYRvSuY8QY/edit?usp=sharing) |
+| 9/29 文字稿 Transcript | [themodernsoftware.dev](https://themodernsoftware.dev/materials/9-29-26-transcript.txt) |
+| 10/1 课件 Slides | [Google Slides](https://docs.google.com/presentation/d/1q2cB1a7P4XsR0UJqE0RmtZFeggNOLdPaSnOpbBVewHA/edit?usp=sharing) |
+| 10/1 文字稿 Transcript | [themodernsoftware.dev](https://themodernsoftware.dev/materials/10-1-26-transcript.txt) |
+| 10/1 Skills 文件夹 Skills folder | [Google Drive](https://drive.google.com/drive/folders/1aEHCXzZKkokuA4AYjD_2i6OrcM5iQosW?usp=drive_link) |
+| 课堂视频 Video | 官网暂未发布 Not published yet |
+| 阅读 Readings | [The Context Tax](https://langwatch.ai/blog/context-tax-when-to-compact) · [OpenSpec](https://openspec.dev) · [Superpowers](https://github.com/obra/superpowers) · [Enterprise MCP](https://blog.cloudflare.com/enterprise-mcp) |
+| 全部链接 All links | [links.md](../links.md) |
 
-Flow: client calls `tools/list` → server returns name, description and JSON schema per tool → host injects them into the model's context → the model emits a structured tool call → the server executes and the conversation resumes. Transports: **stdio** and **streamable HTTP**.
-
-### Designing a good MCP server
-**Option 1 — not a thin REST wrapper.** One tool per endpoint leads to too many tools, huge contexts, and agents spending their effort on orchestration (tried in 2024–early 2025, worked poorly).
-- **Design for outcomes, not operations**: one "pay by email" tool instead of three chained lookups that must all succeed.
-- **Explicit arguments**: avoid nested untyped dicts; use type annotations/Pydantic.
-- **Instructions are context**: docstrings and error messages are prompts.
-- **Name for discovery**: prefix tool names with the service.
-- Consolidate as tools multiply, e.g. one `search_resource` with a resource parameter.
-
-**Option 2 — only two tools, `search` and `execute`**, once MCP servers explode. The agent searches for relevant tools/definitions, then generates deterministic code that runs in a sandbox/VM (not in the model). Tools load on demand and data is filtered before reaching the model; the slides cite 90%+ token reduction.
-
-**Advanced: MCP portals** (Cloudflare's enterprise approach): employees connect to one portal that exposes every internal and third-party server they're authorized for, with central logging, policy and DLP. Covered later in the course.
-
-### Agent Skills preview and comparison
-- Skills: a standard for dynamically loaded, domain-specific capabilities that combine code and prompts (docs, slides, data analysis …). Next week goes deeper.
-
-| | APIs | MCP | Skills |
-|---|---|---|---|
-| What | HTTP/REST/GraphQL interfaces for developers | Tool definitions agents invoke in a standard way | Reusable procedures that teach an agent a job, often orchestrating tools |
-| Who uses it | You or an SDK | The model/agent runtime | The agent or framework |
-| Role | You handle auth, retries, pagination | Main way to reach external resources | Workflow abstraction: "the repeatable way to do X" |
+Notes follow the slide order, in our own words; extra detail comes from the official transcripts. Quotes are short and sourced; blue Supplement boxes are our own additions. Chinese version: [../zh/notes.md](../zh/notes.md).
 
 ---
-## Readings (pointers)
-- **The Context Tax: When to Compact** — when to compact and what it costs (cited in lecture).
-- **OpenSpec**, **Superpowers** — the two spec-driven frameworks above; try one.
-- **Enterprise MCP (Cloudflare)** — centrally deploying and governing MCP.
 
-## Exercises
-- [ ] Add a small feature with RePPIT and keep the research, proposal and plan docs
-- [ ] Build a tiny MCP server with 2–3 outcome-oriented tools
-- [ ] Try Superpowers or OpenSpec and compare with RePPIT
+## Lecture 3 · 9/29: Advanced Prompting and Context Engineering for Complex Codebases
 
+### 1. Logistics
+Factory workshop Thursday 6:20–6:45 pm. The OSS partners program is announced: Anyscale (Ray), Arize AI (Phoenix), Browserbase, cmux, CopilotKit, CrewAI, HeyGen, Marimo, OpenHands, Pi, Unsloth AI, Vercel, Warp, Zilliz.
+
+### 2. Objective
+Go from ad-hoc prompting to a dependable synchronous AI development workflow, and use AI to get up to speed on unfamiliar codebases and work through complex tasks systematically.
+
+### 3. Lesson plan
+Onboarding to large codebases; spec-driven engineering with **RePPIT** (Research, Propose, Plan, Implement, Test); a look at other spec-driven frameworks.
+
+### 4. Vibe coding confuses expectations
+The tab-accept-everything style of vibe coding is not what this lecture is about. Prompt on the slide: how would you build a Mint clone? Extending such an app at production scale calls for a methodical approach.
+
+### 5. Production AI code needs method
+
+> "You should have an active, functional mental model of how you would build your solution"
+> 你应该对自己会怎么搭建这个方案，有一个活跃的、能运转的心智模型。
+> —— Lecture 3 slides
+
+Principles: understand the codebase → propose a few solutions → plan the best one → implement → test. Bad code today is either an architectural mistake or functionally wrong output from a hallucinating model.
+
+### 6. Use RePPIT
+- **Research:** the agent distills the codebase into a structured research doc instead of loading raw code.
+- **Propose:** about two options with trade-offs (more than two gives diminishing returns, per the instructor).
+- **Plan:** files to change, testing, observability, explicit out-of-scope items.
+- **Implement:** the simplest prompt of the five.
+- **Test:** unit, integration, smoke tests, plus an optional review skill.
+
+The slide says to iterate on this until it fits you. In class, the research doc serves both as seed context for the agent and as the instructor's own mental model.
+
+### 7. Demo
+Feature: a trend line of spending by category over time. The instructor chose a frontend-only option.
+
+### 8. Best practices
+Only the first ½–¾ of the context window holds "smart" tokens; system prompt, AGENTS.md/CLAUDE.md and task context fill it before the "dumb zone". Review specs carefully; split very large features into task lists; after each item, write the agent's work into an artifact that becomes context for the next. From the transcript: reuse well-maintained docs and drop stale ones; use the strongest model for research/propose/plan; clear or compact rejected options (a cited study puts the sweet spot around 250k–450k tokens, model-dependent).
+
+### 9. Task delegation taxonomy
+Simple prompting · make a plan · research then plan · (research then plan) × N. The slide asks when to use each.
+
+> [!NOTE]
+> **Supplement**
+> A practical rule of thumb: match the level to the size of the change.
+
+### 10. Other popular frameworks
+**Superpowers:** an opinionated, guided end-to-end workflow; TDD-based; skills for spec/plan, implementation and testing; built-in parallelism. **OpenSpec:** a lightweight flow that tracks changes against source-of-truth specs and merges them after the diff.
+
+### 11. Spec management
+Specs live in Linear or locally in Git (OpenSpec's approach); design trade-offs can go in `.notes/`.
+
+---
+
+## Lecture 4 · 10/1: MCP, Tool-calling, and Beyond
+
+### 1. Logistics
+OSS partner assignments out tonight; AI slop gets a 0; project proposals due tonight; workshop by Ashley Jepson (Factory).
+
+### 2. Why
+Model knowledge is vast but frozen at training time; autonomous systems need a reliable way to bring in live data.
+
+### 3. MCP
+An open protocol for supplying context to models in a way that generalizes across integrations.
+
+> "In English: standard format for exposing tools to LLMs"
+> 说白了：向大模型暴露工具的标准格式。
+> —— Lecture 4 slides
+
+### 4. Basics
+Replaces M × N custom connectors with M + N; no need to rebuild auth, error handling or rate limiting; consistent output via JSON-RPC.
+
+### 5. A bit deeper
+Host (Cursor, Claude Desktop) · client (library in the host, one stateful session per server) · server (thin wrapper around a tool) · tool (callable function). Flow: `tools/list` → server returns name, summary, JSON schema → host injects it into context → model emits a structured call → server executes and the conversation resumes. Transports: stdio and streamable HTTP. Slide example: "Summarize my emails from Jack".
+
+### 6. Designing a good server, option 1
+Not a REST wrapper — that leads to many tiny tools, bloated context and agents busy orchestrating (endpoints were designed for humans, as the instructor put it). Design for outcomes (`send_payment(user_email)` rather than a three-call chain); explicit arguments, no nested dicts; docstrings and errors are prompts; service-prefixed names.
+
+### 7. Option 2
+With many servers, expose just `search` and `execute`: search finds tool definitions, execute generates deterministic code. Context shrinks regardless of server count — over 90% fewer tokens. Example: find a Jira ticket and update it from Google Drive.
+
+### 8. Advanced architecture
+Cloudflare's MCP server portal: one connection reveals every server an employee may use, with central logging, policy enforcement and DLP guardrails.
+
+### 9. Agent Skills
+A standard for on-demand, domain-specific capabilities combining code and prompts (docs, slides, data analysis). Spec at <https://agentskills.io/home>; demo with a skills.md and Matt Pocock's skills repo.
+
+### 10. APIs vs MCP vs Skills
+APIs: interfaces developers call, handling auth/retries/pagination themselves. MCP: standardized tool definitions invoked by the agent runtime; the main way to reach external resources. Skills: reusable procedures that teach an agent a job, often orchestrating several tools — "the repeatable way to do X".
+
+---
+
+## Readings
+The Context Tax (when to compact); OpenSpec and Superpowers; Enterprise MCP (Cloudflare).
+
+> [!NOTE]
+> **Supplement**
+> Exercises: add a small feature with RePPIT and keep the three docs; build an MCP server with 2–3 outcome-oriented tools; try Superpowers or OpenSpec and compare with RePPIT.
