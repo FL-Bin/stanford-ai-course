@@ -25,6 +25,6 @@ Each new tool is one more option for the model to weigh, so the bar is high. To 
 ## Conclusion
 No fixed rules — tool design is art and science; experiment and read outputs.
 
-> [!TIP]
+> [!WARNING]
 > **Supplement**
 > The lecture says ~40 built-in tools, the article (Feb 2026) ~20 — different dates and counting.

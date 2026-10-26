@@ -8,6 +8,6 @@
 
 *How to code Claude Code in ~200 lines of code*, official course channel. No notes yet (no transcript available when compiled).
 
-> [!TIP]
+> [!WARNING]
 > **Supplement**
 > Likely the same demo as lecture 1 (inferred, not verified) — watch alongside [03](03_code_walkthrough_minimal_agent.md).

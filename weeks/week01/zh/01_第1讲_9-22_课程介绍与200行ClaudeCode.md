@@ -23,6 +23,7 @@
 - 要专注于**整体的、系统级的思维，架构（architectures）和抽象（abstractions）**；再结合 **AI 优先（AI-first）** 的开发方式，你就不可替代。
 
 ## 3. 这门课讲原则，不讲工具
+
 > [!NOTE]
 > "This class is about principles not tools"
 > 这门课讲的是原则，而不是工具。
@@ -69,7 +70,7 @@
    - 工具：`Read_file`（读文件）、`List_dir`（列目录）、`Edit_file`（改文件）。
 3. 然后现场从零写一个编程代理（Let's build a coding agent from scratch!），代码逐段讲解见 [03_代码讲解](03_代码讲解_约200行的编程代理.md)。
 
-> [!TIP]
+> [!WARNING]
 > **补充**
 > 整讲可以压缩成一句：**代理 = 一个循环 + 一组工具**。模型不再请求工具时，就输出最终回答，等下一次用户输入。
 >

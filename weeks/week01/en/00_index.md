@@ -18,7 +18,7 @@ Two lectures: 9/22 course intro plus building a coding agent live in ~200 lines;
 | 05 | Structure of Claude Code's internal prompts | 9/24 prompts folder |
 | 06–08 | Readings | YouTube / X / arXiv |
 
-> [!TIP]
+> [!WARNING]
 > **Supplement**
 > Suggested order: 01 → 03 (run the code) → 02 → 04 → 05 → 07 → 08 → 06. One-line summary: an agent is a loop plus tools; production agents wrap that loop in a harness.
 
