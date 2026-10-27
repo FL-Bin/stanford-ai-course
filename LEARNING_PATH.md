@@ -4,7 +4,7 @@
 
 按上课顺序从第 1 周读到第 10 周。每节课列出日期、主题、讲者、我们的中英文笔记，以及官方课件和阅读链接。
 
-想系统学习？读[教材](book/zh/00-目录.md)，或下载教材 PDF：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf)。按周笔记（附录）PDF：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf)。均随仓库更新自动重新生成。
+想系统学习？读[教材](book/zh/00-目录.md)，或下载教材 PDF：[中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf) · [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf)。按周笔记（附录）PDF：[中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf)。均随仓库更新自动重新生成。
 
 - 日期为美国太平洋时间（课程所在地）。
 - 课件等原始材料只链接到官方地址，版权归原作者；部分课件可能需要斯坦福账号才能打开。

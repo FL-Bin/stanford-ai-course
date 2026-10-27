@@ -3,9 +3,9 @@
 **简体中文** | [English](README.en.md)
 
 ## 阅读入口
-- 📖 **[教材](book/zh/00-目录.md)（推荐从这里开始）**：把课程内容重新编排成循序渐进的章节，从编程代理的原理讲到软件工厂；每章开头列出对应的讲座和阅读，可以溯源到官方原文。PDF：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf)
+- 📖 **[教材](book/zh/00-目录.md)（推荐从这里开始）**：把课程内容重新编排成循序渐进的章节，从编程代理的原理讲到软件工厂；每章开头列出对应的讲座和阅读，可以溯源到官方原文。PDF：[中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf) · [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf)
 - 📚 **[学习路线](LEARNING_PATH.md)**：按上课日期列出每节课的讲者、官方课件和阅读，并注明对应教材哪一章。
-- 🗂 **[按周笔记](weeks/)（附录）**：每周按课件顺序整理的原始笔记，适合对照课件逐页查。PDF：[中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf)
+- 🗂 **[按周笔记](weeks/)（附录）**：每周按课件顺序整理的原始笔记，适合对照课件逐页查。PDF：[中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf) · [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf)
 
 PDF 随仓库更新自动重新生成，链接不变。
 

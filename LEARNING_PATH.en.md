@@ -4,7 +4,7 @@
 
 Read from week 1 to week 10 in class order. Each lecture lists the date, topic, speaker, our notes (zh/en), and official slides and readings.
 
-Want structured study? Read the [textbook](book/en/00-contents.md) or download its PDF: [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf) · [中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf). Weekly notes (appendix) PDF: [English](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf) · [中文版](https://github.com/gaibin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf). All rebuilt automatically.
+Want structured study? Read the [textbook](book/en/00-contents.md) or download its PDF: [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf) · [中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf). Weekly notes (appendix) PDF: [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf) · [中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf). All rebuilt automatically.
 
 - Dates are US Pacific time.
 - Original materials are linked to official sources only; copyright belongs to their authors. Some slides may require a Stanford account.

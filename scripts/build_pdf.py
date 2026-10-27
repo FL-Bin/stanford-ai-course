@@ -10,7 +10,7 @@ import markdown
 from weasyprint import HTML
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REPO_URL = "https://github.com/gaibin/stanford-ai-course/blob/main/"
+REPO_URL = "https://github.com/FL-Bin/stanford-ai-course/blob/main/"
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "dist")
 
 TEXT = {
@@ -155,7 +155,7 @@ def build(lang):
     today = datetime.date.today().isoformat()
     cover = f"""<section class="cover"><h1>{t['title']}</h1><div class="sub">{t['sub']}</div>
 <p class="small">{t['notice']}</p><p class="small">{t['lic']}</p>
-<p class="small">{t['built']}: {today} · {t['src']}: <a href="https://github.com/gaibin/stanford-ai-course">github.com/gaibin/stanford-ai-course</a> · <a href="https://themodernsoftware.dev/">themodernsoftware.dev</a></p></section>"""
+<p class="small">{t['built']}: {today} · {t['src']}: <a href="https://github.com/FL-Bin/stanford-ai-course">github.com/FL-Bin/stanford-ai-course</a> · <a href="https://themodernsoftware.dev/">themodernsoftware.dev</a></p></section>"""
     doc = f"""<!doctype html><html lang="{'zh-CN' if lang=='zh' else 'en'}"><head><meta charset="utf-8">
 <title>{html.escape(t['title'])}</title><style>{CSS}</style></head><body>{cover}
 <section class="toc"><h1>{t['toc']}</h1><ul>{toc_html}</ul></section>{''.join(chapters)}</body></html>"""
