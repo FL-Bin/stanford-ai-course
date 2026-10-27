@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 讲座 | 10/1 · Mihail Eric | MCP、工具调用及更多 | [课件](https://docs.google.com/presentation/d/1q2cB1a7P4XsR0UJqE0RmtZFeggNOLdPaSnOpbBVewHA/edit) · [文字稿](https://themodernsoftware.dev/materials/10-1-26-transcript.txt) · [Skills 文件夹](https://drive.google.com/drive/folders/1aEHCXzZKkokuA4AYjD_2i6OrcM5iQosW) |
 | 讲座 | 10/6 · Mihail Eric | Agent Skills | [课件](https://docs.google.com/presentation/d/15bPu5c-i8D8McTh6l7SpUPk2n9M_Y-CdDQLfyzL8RD8/edit) |
-| 嘉宾 | 10/8 · Lee Robinson | 常驻代理是怎么工作的 | [课件](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view)（标注保密，本章只概括公开要点） |
+| 嘉宾 | 10/8 · Lee Robinson | 常驻代理是怎么工作的 | [课件](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view)（标注保密，本章只概括公开要点） · [公开视频（X）](https://x.com/leerob/status/2108650243365736855) |
 | 阅读 | — | Enterprise MCP（Cloudflare） | [Cloudflare 博客](https://blog.cloudflare.com/enterprise-mcp) |
 | 阅读 | — | pstack · Matt Pocock's Skills · browse.sh | [pstack](https://github.com/cursor/plugins/tree/main/pstack) · [skills](https://github.com/mattpocock/skills) · [browse.sh](https://browse.sh) |
 | 标准 | — | MCP 规范 · Agent Skills 标准 | [modelcontextprotocol.io](https://modelcontextprotocol.io) · [agentskills.io](https://agentskills.io/home) |
@@ -143,11 +143,14 @@ description: 发版前检查。用户说「准备发版」「打 tag」「releas
 > 人和 AI 协作的方式也在演进：从复制粘贴聊天，到终端里每步由你批准，再到多个代理在后台并行、你只审最终结果，最后是给一个「有自己电脑和记忆的同事」发消息。你的角色从逐步批准变成随时纠偏。
 >
 > 和本章最相关的一点：记忆和 skills 都以纯文本文件保存，人和代理都能读、能改，skill 只在需要时加载，所以多也不贵。架构上则强调状态存在服务器、每一步可以安全重试。这些内容在第 8 章「后台代理」会展开。
+>
+> 来源：课件（标注保密，不引用原文）；公开视频为 Lee Robinson 本人发在 X 上的讲座，不是课程官网：<https://x.com/leerob/status/2108650243365736855>。
 
 ## 相关视频
 
 - [CS146S 每周速览播放列表](https://www.youtube.com/playlist?list=PLxpwjSdVZQ97L8hAGqTYUeOJqnKVSu3pb)：粉丝制作，非官方，2025 年秋季那一期的总结。
-- 10/1、10/6、10/8 课堂录像：官网暂未发布。
+- [10/8 Lee Robinson 嘉宾讲座公开视频](https://x.com/leerob/status/2108650243365736855)（他本人发在 X 上，不是课程官网）。
+- 10/1、10/6 课堂录像：官网暂未发布。
 
 ## 动手练习
 

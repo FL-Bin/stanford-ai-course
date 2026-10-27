@@ -8,7 +8,7 @@ Want structured study? Read the [textbook](book/en/00-contents.md) or download i
 
 - Dates are US Pacific time.
 - Original materials are linked to official sources only; copyright belongs to their authors. Some slides may require a Stanford account.
-- Video: as of 2026-10-26 the course site has published no lecture recordings, so every lecture says "No public video". Videos that are official readings are marked separately.
+- Video: as of 2026-10-27 the course site has published no lecture recordings, so most lectures still say "No public video". Lee Robinson's 10/8 guest lecture has a public video he posted on X. Videos that are official readings are marked separately.
 
 ## Week 1 · The Internals of Coding Agents
 
@@ -70,7 +70,7 @@ All links: [weeks/week02/links.md](weeks/week02/links.md)
 - Textbook: [Chapter 3](book/en/03-tools-and-capabilities-mcp-and-skills.md)
 - Notes: [中文](weeks/week03/zh/notes.md) · [English](weeks/week03/en/notes.md)
 - Official materials: [Slides](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view)
-- Video: No public video
+- Video: [Public video (Lee Robinson on X)](https://x.com/leerob/status/2108650243365736855)
 
 **Readings:** [pstack](https://github.com/cursor/plugins/tree/main/pstack) · [Matt Pocock's Skills](https://github.com/mattpocock/skills) · [browse.sh](https://browse.sh)
 

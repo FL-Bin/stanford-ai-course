@@ -8,7 +8,7 @@
 
 - 日期为美国太平洋时间（课程所在地）。
 - 课件等原始材料只链接到官方地址，版权归原作者；部分课件可能需要斯坦福账号才能打开。
-- 视频：截至 2026-10-26，课程官网没有发布任何课堂录像，因此每节课标注「暂无公开视频」；官方阅读材料中的视频单独标出。
+- 视频：截至 2026-10-27，课程官网没有发布课堂录像，因此多数课仍标注「暂无公开视频」。10/8 Lee Robinson 的嘉宾讲座有他本人发在 X 上的公开视频。官方阅读材料中的视频单独标出。
 
 ## 第 1 周｜编程代理的内部原理（The Internals of Coding Agents）
 
@@ -70,7 +70,7 @@
 - 教材：[第 3 章](book/zh/03-工具与能力-MCP和Skills.md)
 - 笔记：[中文](weeks/week03/zh/notes.md) · [English](weeks/week03/en/notes.md)
 - 官方材料：[课件 Slides](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view)
-- 视频：暂无公开视频
+- 视频：[公开视频（Lee Robinson，X）](https://x.com/leerob/status/2108650243365736855)
 
 **本周阅读：** [pstack](https://github.com/cursor/plugins/tree/main/pstack) · [Matt Pocock's Skills](https://github.com/mattpocock/skills) · [browse.sh](https://browse.sh)
 

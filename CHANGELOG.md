@@ -10,6 +10,8 @@
   README now offers three entry points: textbook / learning path / weekly notes (appendix); the learning path maps each lecture to its chapter.
 - 第 5 周：10/20 课件已发布，补上该讲笔记和链接。
   Week 5: 10/20 slides published; lecture notes and links added.
+- 第 3 周嘉宾 Lee Robinson（10/8，常驻代理）的讲座有他本人发在 X 上的公开视频；学习路线和教材第 3 章已加上链接，未转载讲座内容。
+  Lee Robinson's 10/8 guest lecture (always-on agents) has a public video he posted on X; linked from the learning path and chapter 3. Lecture content was not copied.
 
 ## 2026-10-26
 - 新增学习路线与 PDF：LEARNING_PATH.md / LEARNING_PATH.en.md 按上课顺序列出每节课；整本中英文 PDF 由 GitHub Actions 自动生成，发布在 Release「pdf-latest」。

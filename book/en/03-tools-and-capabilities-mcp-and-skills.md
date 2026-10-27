@@ -8,7 +8,7 @@
 |---|---|---|---|
 | Lecture | 10/1 · Mihail Eric | MCP, tool calling and beyond | [Slides](https://docs.google.com/presentation/d/1q2cB1a7P4XsR0UJqE0RmtZFeggNOLdPaSnOpbBVewHA/edit) · [Transcript](https://themodernsoftware.dev/materials/10-1-26-transcript.txt) · [Skills folder](https://drive.google.com/drive/folders/1aEHCXzZKkokuA4AYjD_2i6OrcM5iQosW) |
 | Lecture | 10/6 · Mihail Eric | Agent Skills | [Slides](https://docs.google.com/presentation/d/15bPu5c-i8D8McTh6l7SpUPk2n9M_Y-CdDQLfyzL8RD8/edit) |
-| Guest | 10/8 · Lee Robinson | How always-on agents work | [Slides](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view) (marked confidential; public points only) |
+| Guest | 10/8 · Lee Robinson | How always-on agents work | [Slides](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view) (marked confidential; public points only) · [Public video (X)](https://x.com/leerob/status/2108650243365736855) |
 | Reading | — | Enterprise MCP (Cloudflare) | [Cloudflare blog](https://blog.cloudflare.com/enterprise-mcp) |
 | Reading | — | pstack · Matt Pocock's Skills · browse.sh | [pstack](https://github.com/cursor/plugins/tree/main/pstack) · [skills](https://github.com/mattpocock/skills) · [browse.sh](https://browse.sh) |
 | Standards | — | MCP spec · Agent Skills standard | [modelcontextprotocol.io](https://modelcontextprotocol.io) · [agentskills.io](https://agentskills.io/home) |
@@ -143,11 +143,14 @@ A simple order of thought: external systems with auth and permissions → MCP; a
 > Human–AI collaboration is evolving: from copy-pasting chats, to approving each step in a terminal, to many agents working in the background while you review results, to messaging a "colleague" with its own computer and memory. Your role shifts from approving each step to steering.
 >
 > Most relevant here: memory and skills are plain-text files that people and agents can read and edit, and skills load only when needed, so many are cheap. Architecturally, state lives on the server and every step can be retried safely. Chapter 8, "Background Agents", expands on this.
+>
+> Sources: the slides (marked confidential; no quotes); the public video is the lecture Lee Robinson posted on X, not a course-site recording: <https://x.com/leerob/status/2108650243365736855>.
 
 ## Related videos
 
 - [CS146S weekly recap playlist](https://www.youtube.com/playlist?list=PLxpwjSdVZQ97L8hAGqTYUeOJqnKVSu3pb): fan-made, unofficial, Fall 2025 summaries.
-- 10/1, 10/6, 10/8 recordings: not published.
+- [10/8 Lee Robinson guest lecture, public video](https://x.com/leerob/status/2108650243365736855) (posted by him on X, not on the course site).
+- 10/1 and 10/6 recordings: not published.
 
 ## Practice
 
