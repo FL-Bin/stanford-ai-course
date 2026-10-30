@@ -6,7 +6,7 @@ This book reorganizes the ten weeks of Stanford CS146S (The Modern Software Deve
 
 Looking for a specific date? See the [Learning Path](../../LEARNING_PATH.en.md).
 
-**Appendix: weekly notes.** The original slide-order notes stay in [weeks/](../../weeks/) ([Week 1](../../weeks/week01/en/00_index.md) · [Week 2](../../weeks/week02/en/notes.md) · [Week 3](../../weeks/week03/en/notes.md) · [Week 4](../../weeks/week04/en/notes.md) · [Week 5](../../weeks/week05/en/notes.md)) for tracing back to the slides page by page.
+**Appendix: weekly notes.** The original slide-order notes stay in [weeks/](../../weeks/) ([Week 1](../../weeks/week01/en/00_index.md) · [Week 2](../../weeks/week02/en/notes.md) · [Week 3](../../weeks/week03/en/notes.md) · [Week 4](../../weeks/week04/en/notes.md) · [Week 5](../../weeks/week05/en/notes.md) · [Week 6](../../weeks/week06/en/notes.md)) for tracing back to the slides page by page.
 
 ```mermaid
 flowchart LR
@@ -24,7 +24,7 @@ flowchart LR
 | 3 | [Tools and Capabilities: MCP and Skills](03-tools-and-capabilities-mcp-and-skills.md) | Week 2 (10/1), Week 3 (10/6, 10/8) | Done |
 | 4 | [Customizing Your Agent](04-customizing-your-agent.md) | Week 4 (10/13, 10/15) | Done |
 | 5 | [Agent-Ready Codebases](05-agent-ready-codebases.md) | Week 5 (10/20, 10/22) | Done |
-| 6 | Agentic Code Review | Week 6 (10/27, 10/29) | Coming |
+| 6 | [Agentic Code Review](06-agentic-code-review.md) | Week 6 (10/27, 10/29) | Done |
 | 7 | Security in AI Codebases | Week 7 (11/3, 11/5) | Coming |
 | 8 | Background Agents | Week 8 (11/10, 11/12) | Coming |
 | 9 | Building an AI-Native Team | Week 9 (11/17, 11/19) | Coming |
@@ -59,10 +59,11 @@ flowchart LR
 - **Lectures:** 10/20; readings Making Codebases Agent Ready, Making Ergonomic Repositories.
 - **Guest sidebar:** Eno Reyes (10/22, Factory). See the interview <https://youtu.be/pHGGlrKSnJ8>.
 
-## Chapter 6 · Agentic Code Review (coming)
+## Chapter 6 · Agentic Code Review
 
-- **Planned:** best practices and architectures for agent code review, the "evaluate" step of the loop.
-- **Lectures:** 10/27; guest sidebar Silas Alberti (10/29).
+- **Learning goals:** why review became the new bottleneck; multi-agent, risk-tiered review architectures; designing a review agent (switch models, give context, actually run the code, control cost, evaluate).
+- **Lectures:** 10/27 Agentic code review: best practices and architectures; readings Layered Code Review, Coordinating Specialist Review Agents at Scale, Beyond the Diff.
+- **Guest sidebar:** Silas Alberti (10/29, Cognition). Awaiting official materials.
 
 ## Chapter 7 · Security in AI Codebases (coming)
 

@@ -34,7 +34,7 @@ PDF 随仓库更新自动重新生成，链接不变。
 | 3 | Agent Skills 与命令行 Agent Skills and CLI | 10/6, 10/8 | ✅ 已更新 → [weeks/week03](weeks/week03/) |
 | 4 | 定制代理和仓库 Customizing Your Agent and Repository | 10/13, 10/15 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week04](weeks/week04/) |
 | 5 | 让代码库适合代理 Agent-Ready Codebases | 10/20, 10/22 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week05](weeks/week05/) |
-| 6 | 代理代码审查 Agentic Code Review | 10/27, 10/29 | ⏳ 待更新 |
+| 6 | 代理代码审查 Agentic Code Review | 10/27, 10/29 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week06](weeks/week06/) |
 | 7 | 安全 Security | 11/3, 11/5 | ⏳ 待更新 |
 | 8 | 后台代理 Background Agents | 11/10, 11/12 | ⏳ 待更新 |
 | 9 | 打造 AI 原生团队 Building an AI-Native Team | 11/17, 11/19 | ⏳ 待更新 |

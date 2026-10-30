@@ -33,7 +33,7 @@ Every note starts with an "官方材料 / Official materials" table linking the 
 | 3 | Agent Skills and CLI | 10/6, 10/8 | ✅ Done → [week03/en](weeks/week03/en/notes.md) |
 | 4 | Customizing Your Agent and Repository | 10/13, 10/15 | ✅ Done (guest lecture awaits official materials) → [week04/en](weeks/week04/en/notes.md) |
 | 5 | Agent-Ready Codebases | 10/20, 10/22 | ✅ Done (guest lecture awaits official materials) → [week05/en](weeks/week05/en/notes.md) |
-| 6 | Agentic Code Review | 10/27, 10/29 | ⏳ Pending |
+| 6 | Agentic Code Review | 10/27, 10/29 | ✅ Done (guest lecture awaits official materials) → [week06/en](weeks/week06/en/notes.md) |
 | 7 | Security | 11/3, 11/5 | ⏳ Pending |
 | 8 | Background Agents | 11/10, 11/12 | ⏳ Pending |
 | 9 | Building an AI-Native Team | 11/17, 11/19 | ⏳ Pending |

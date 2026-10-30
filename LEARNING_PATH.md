@@ -120,10 +120,27 @@
 
 全部链接：[weeks/week05/links.md](weeks/week05/links.md)
 
-## 第 6 周｜代理代码审查（Agentic Code Review）· 待更新
+## 第 6 周｜代理代码审查（Agentic Code Review）
 
-- 10/27 · 代理代码审查：最佳实践与架构 · Mihail Eric · 待更新 · 教材第 6 章（待更新）
-- 10/29 · 嘉宾讲座 · Silas Alberti（嘉宾 Guest） · 待更新 · 教材第 6 章（待更新）
+### 10/27（周二 Tue） · 代理代码审查：最佳实践与架构
+
+- 讲者：Mihail Eric
+- 教材：[第 6 章](book/zh/06-代理代码审查.md)
+- 笔记：[中文](weeks/week06/zh/notes.md) · [English](weeks/week06/en/notes.md)
+- 官方材料：[课件 Slides](https://docs.google.com/presentation/d/1u8WYtFj0O9yc4H4JX9D4URYKhDzvrAGKLzn38DXSrak/edit)
+- 视频：暂无公开视频
+
+### 10/29（周四 Thu） · 嘉宾讲座
+
+- 讲者：Silas Alberti（嘉宾 Guest）
+- 教材：[第 6 章](book/zh/06-代理代码审查.md)
+- 笔记：[中文](weeks/week06/zh/notes.md) · [English](weeks/week06/en/notes.md)
+- 官方材料：官网暂未发布
+- 视频：暂无公开视频
+
+**本周阅读：** [Layered Code Review](https://x.com/addyosmani/status/2114604912520921136) · [Coordinating Specialist Review Agents at Scale](https://blog.cloudflare.com/ai-code-review) · [Beyond the Diff](https://greptile.com/blog/how-to-build-a-code-review-agent)
+
+全部链接：[weeks/week06/links.md](weeks/week06/links.md)
 
 ## 第 7 周｜安全（Security）· 待更新
 

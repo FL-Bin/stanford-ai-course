@@ -120,10 +120,27 @@ All links: [weeks/week04/links.md](weeks/week04/links.md)
 
 All links: [weeks/week05/links.md](weeks/week05/links.md)
 
-## Week 6 · Agentic Code Review · Pending
+## Week 6 · Agentic Code Review
 
-- 10/27 · Agentic code review: best practices and architectures · Mihail Eric · Pending · Textbook ch. 6 (coming)
-- 10/29 · Guest lecture · Silas Alberti (guest) · Pending · Textbook ch. 6 (coming)
+### 10/27 (Tue) · Agentic code review: best practices and architectures
+
+- Speaker: Mihail Eric
+- Textbook: [Chapter 6](book/en/06-agentic-code-review.md)
+- Notes: [中文](weeks/week06/zh/notes.md) · [English](weeks/week06/en/notes.md)
+- Official materials: [Slides](https://docs.google.com/presentation/d/1u8WYtFj0O9yc4H4JX9D4URYKhDzvrAGKLzn38DXSrak/edit)
+- Video: No public video
+
+### 10/29 (Thu) · Guest lecture
+
+- Speaker: Silas Alberti (guest)
+- Textbook: [Chapter 6](book/en/06-agentic-code-review.md)
+- Notes: [中文](weeks/week06/zh/notes.md) · [English](weeks/week06/en/notes.md)
+- Official materials: not published on the site yet
+- Video: No public video
+
+**Readings:** [Layered Code Review](https://x.com/addyosmani/status/2114604912520921136) · [Coordinating Specialist Review Agents at Scale](https://blog.cloudflare.com/ai-code-review) · [Beyond the Diff](https://greptile.com/blog/how-to-build-a-code-review-agent)
+
+All links: [weeks/week06/links.md](weeks/week06/links.md)
 
 ## Week 7 · Security · Pending
 

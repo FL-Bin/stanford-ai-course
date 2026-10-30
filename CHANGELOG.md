@@ -1,6 +1,12 @@
 # 更新记录 / Changelog
 日期为北京时间 / Dates in Beijing time (UTC+8).
 
+## 2026-10-30
+- 第 6 周：10/27 课件已发布，新增按周笔记（中英）和教材第 6 章「代理代码审查」；README、学习路线、目录同步更新。10/29 嘉宾讲座待官方材料。
+  Week 6: 10/27 slides published; added weekly notes (zh + en) and textbook chapter 6 "Agentic Code Review"; README, learning path and contents updated. 10/29 guest talk awaits official materials.
+- PDF 重新排版：封面、章节首页、页眉页脚、代码高亮、提示框和表格样式；使用开源字体（Inter、Source Serif 4、JetBrains Mono、Noto Sans SC，均为 SIL OFL）。
+  PDF redesign: cover, chapter openers, running headers/footers, syntax highlighting, callouts and tables; open fonts (Inter, Source Serif 4, JetBrains Mono, Noto Sans SC, all SIL OFL).
+
 ## 2026-10-27
 - 新增教材 book/：把课程重新编排成循序渐进的章节，完成目录和第 1–5 章（中英），每章开头列出对应讲座、讲者和阅读的官方链接；第 6–10 章随课程更新。
   Added the textbook in book/: course reorganized into progressive chapters; contents and chapters 1–5 (zh + en) done, each listing its lectures, speakers and readings with official links; chapters 6–10 follow the course.
