@@ -21,7 +21,7 @@
 
 | 类型 | 讲者 | 标题 | 平台 | 日期 | 时长 |
 |---|---|---|---|---|---|
-| 课堂录像 ⭐ | Lee Robinson（SpaceX 模型行为，前 Cursor） | [Stanford CS146S: How always-on agents work](https://x.com/leerob/status/2108650243365736855)（**你在 X 上看过、还没看完的就是这条**） | X（Lee Robinson 本人发布） | 2026-10-09 | 45:17 |
+| 课堂录像 ⭐ | Lee Robinson（SpaceX 模型行为，前 Cursor） | [Stanford CS146S: How always-on agents work](https://x.com/leerob/status/2108650243365736855)（**同Youtube一致的X版本**） | X（Lee Robinson 本人发布） | 2026-10-09 | 45:17 |
 | 课堂录像 | Lee Robinson | [Stanford CS146S: How always-on agents work](https://www.youtube.com/watch?v=L1OBRtfPS34)（同一讲，YouTube 版） | YouTube · leerob | 2026-10-11 | 45:18 |
 | 相关 | Lee Robinson | [Cursor: coding agents tutorial (2026)](https://www.youtube.com/watch?v=kF2WQgk1LtY) | YouTube · leerob | 2026-04-15 | — |
 
