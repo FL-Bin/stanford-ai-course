@@ -3,3 +3,4 @@ originals/
 *.zip
 .DS_Store
 dist/
+.fonts/
