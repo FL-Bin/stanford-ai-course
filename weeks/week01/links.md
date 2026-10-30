@@ -12,3 +12,11 @@ All materials belong to their original authors. 所有原始材料版权归原�
 | 阅读 Reading: Lessons from Building Claude Code | [X](https://x.com/trq212/status/2027463795355095314) |
 | 阅读 Reading: Dive into Claude Code (paper) | [arXiv PDF](https://arxiv.org/pdf/2604.14228) · [code](https://github.com/VILA-Lab/Dive-into-Claude-Code) |
 | 作业参考 Assignments (2025 edition) | [GitHub](https://github.com/mihail911/modern-software-dev-assignments) |
+
+## 视频 Videos
+
+- 官方阅读 Official reading: [How to code Claude Code in ~200 lines of code](https://youtube.com/watch?v=s7ZzkdvCMDY)
+- 相关 Related (Mihail Eric): [AI Fundamentals with Mihail Eric · Stanford GSB](https://www.youtube.com/watch?v=wBdUbUmw8nc) · [From Writing Code to Managing Agents · EO](https://www.youtube.com/watch?v=wEsjK3Smovw)
+- 9/22、9/24 课堂录像 Lecture recordings: 暂无公开视频 No public video
+
+完整列表 Full list: [VIDEOS.md](../../VIDEOS.md) · [VIDEOS.en.md](../../VIDEOS.en.md)

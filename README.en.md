@@ -4,6 +4,7 @@
 
 ## Where to start
 - 📖 **[Textbook](book/en/00-contents.md) (recommended)**: the course reorganized into progressive chapters, from how coding agents work to the software factory; each chapter lists the lectures and readings it covers so you can trace back to the originals. PDF: [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-en.pdf) · [中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-book-zh.pdf)
+- 🎬 **[Video resources](VIDEOS.en.md)**: lecture recordings and guests' related public talks, by week (links only).
 - 📚 **[Learning path](LEARNING_PATH.en.md)**: every lecture by date with speaker, official slides and readings, plus the matching textbook chapter.
 - 🗂 **[Weekly notes](weeks/) (appendix)**: the original slide-order notes for each week, handy for checking against the slides. PDF: [English](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-en.pdf) · [中文版](https://github.com/FL-Bin/stanford-ai-course/releases/download/pdf-latest/CS146S-notes-zh.pdf)
 

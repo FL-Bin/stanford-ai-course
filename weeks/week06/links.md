@@ -10,3 +10,10 @@ All materials belong to their original authors. 版权归原作者所有，本�
 | 阅读 Beyond the Diff: Context, Testing, and Model Selection | [Greptile Blog](https://greptile.com/blog/how-to-build-a-code-review-agent) |
 | 课件引用 Cited in slides: Solving code review with Cosmos | [Augment Code](https://www.augmentcode.com/blog/solving-code-review-with-cosmos) |
 | 课件引用 Cited in slides: Cloudflare internal AI engineering stack | [Cloudflare Blog](https://blog.cloudflare.com/internal-ai-engineering-stack/) |
+
+## 视频 Videos
+
+- 10/29 Silas Alberti: 暂无公开录像 No public recording yet
+- 相关 Related: [Why Cloud Agents Are Finally Ready · Cerebras](https://www.youtube.com/watch?v=KSu4TbzJGAs) · [DeepWiki: The GitHub Encyclopedia · Latent Space](https://www.youtube.com/watch?v=cX4-e25xQhg)
+
+完整列表 Full list: [VIDEOS.md](../../VIDEOS.md) · [VIDEOS.en.md](../../VIDEOS.en.md)

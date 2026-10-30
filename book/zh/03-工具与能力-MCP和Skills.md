@@ -149,7 +149,7 @@ description: 发版前检查。用户说「准备发版」「打 tag」「releas
 ## 相关视频
 
 - [CS146S 每周速览播放列表](https://www.youtube.com/playlist?list=PLxpwjSdVZQ97L8hAGqTYUeOJqnKVSu3pb)：粉丝制作，非官方，2025 年秋季那一期的总结。
-- [10/8 Lee Robinson 嘉宾讲座公开视频](https://x.com/leerob/status/2108650243365736855)（他本人发在 X 上，不是课程官网）。
+- [10/8 Lee Robinson 嘉宾讲座公开视频](https://x.com/leerob/status/2108650243365736855)（他本人发在 X 上，不是课程官网）。 [同一讲（YouTube 版）](https://www.youtube.com/watch?v=L1OBRtfPS34)
 - 10/1、10/6 课堂录像：官网暂未发布。
 
 ## 动手练习

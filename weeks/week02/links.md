@@ -14,3 +14,10 @@ All materials belong to their original authors. 版权归原作者所有，本�
 | 阅读 Enterprise MCP (Cloudflare) | [Cloudflare blog](https://blog.cloudflare.com/enterprise-mcp) |
 | MCP 规范 MCP specification | [modelcontextprotocol.io](https://modelcontextprotocol.io) |
 | Agent Skills 标准 | [agentskills.io](https://agentskills.io/home) |
+
+## 视频 Videos
+
+- 课堂录像 Lecture recordings: 暂无公开视频 No public video
+- 非官方 Unofficial: [CS146S weekly recap playlist (Fall 2025, fan-made)](https://www.youtube.com/playlist?list=PLxpwjSdVZQ97L8hAGqTYUeOJqnKVSu3pb)
+
+完整列表 Full list: [VIDEOS.md](../../VIDEOS.md) · [VIDEOS.en.md](../../VIDEOS.en.md)

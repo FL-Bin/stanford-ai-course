@@ -11,3 +11,10 @@ All materials belong to their original authors. 版权归原作者所有，本�
 | 阅读 Steering Claude Code: Skills, Hooks, Rules, Subagents… | [claude.com](https://claude.com/resources/articles/steering-claude-code-skills-hooks-rules-subagents-and-more) |
 | 阅读 Writing a Good CLAUDE.md | [hlyr.dev](https://hlyr.dev/blog/writing-a-good-claude-md) |
 | 文字稿 Transcripts | 官网暂未发布 Not published (as of 2026-10-25) |
+
+## 视频 Videos
+
+- 10/15 Boris Cherny: 暂无公开录像 No public recording
+- 相关 Related: [Mastering Claude Code in 30 minutes · Anthropic](https://www.youtube.com/watch?v=6eBSHbLKuN0) · [Inside Claude Code With Its Creator · YC](https://www.youtube.com/watch?v=PQU9o_5rHC4)
+
+完整列表 Full list: [VIDEOS.md](../../VIDEOS.md) · [VIDEOS.en.md](../../VIDEOS.en.md)

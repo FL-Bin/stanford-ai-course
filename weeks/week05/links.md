@@ -9,3 +9,10 @@ All materials belong to their original authors. 版权归原作者所有，本�
 | 阅读 Making Ergonomic Repositories | [X](https://x.com/trybasis/status/2056881705269580023) |
 | 课上演示 Demo: Factory Agent Readiness | [factory.ai](https://factory.ai/news/agent-readiness) · [kodustech/agent-readiness](https://github.com/kodustech/agent-readiness) |
 | 嘉宾相关访谈 Related interview: Eno Reyes | [YouTube](https://youtu.be/pHGGlrKSnJ8) |
+
+## 视频 Videos
+
+- 10/22 Eno Reyes: 暂无公开录像 No public recording
+- 官方阅读 / 相关 Official reading / Related: [Making Codebases Agent Ready](https://www.youtube.com/watch?v=ShuJ_CN6zr4) · [The Build System: Mission Impossible with Eno Reyes](https://youtu.be/pHGGlrKSnJ8)
+
+完整列表 Full list: [VIDEOS.md](../../VIDEOS.md) · [VIDEOS.en.md](../../VIDEOS.en.md)

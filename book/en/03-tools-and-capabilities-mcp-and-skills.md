@@ -149,7 +149,7 @@ A simple order of thought: external systems with auth and permissions → MCP; a
 ## Related videos
 
 - [CS146S weekly recap playlist](https://www.youtube.com/playlist?list=PLxpwjSdVZQ97L8hAGqTYUeOJqnKVSu3pb): fan-made, unofficial, Fall 2025 summaries.
-- [10/8 Lee Robinson guest lecture, public video](https://x.com/leerob/status/2108650243365736855) (posted by him on X, not on the course site).
+- [10/8 Lee Robinson guest lecture, public video](https://x.com/leerob/status/2108650243365736855) (posted by him on X, not on the course site). [Same lecture (YouTube version)](https://www.youtube.com/watch?v=L1OBRtfPS34)
 - 10/1 and 10/6 recordings: not published.
 
 ## Practice

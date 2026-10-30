@@ -2,6 +2,8 @@
 日期为北京时间 / Dates in Beijing time (UTC+8).
 
 ## 2026-10-30
+- 新增视频资源汇总 VIDEOS.md / VIDEOS.en.md，各周 links.md 加了视频小节；10/8 Lee Robinson 讲座补上 YouTube 版。只放链接，不转载。
+  Added VIDEOS.md / VIDEOS.en.md and a video section in each week's links.md; added the YouTube copy of Lee Robinson's 10/8 lecture. Links only.
 - 第 6 周：10/27 课件已发布，新增按周笔记（中英）和教材第 6 章「代理代码审查」；README、学习路线、目录同步更新。10/29 嘉宾讲座待官方材料。
   Week 6: 10/27 slides published; added weekly notes (zh + en) and textbook chapter 6 "Agentic Code Review"; README, learning path and contents updated. 10/29 guest talk awaits official materials.
 - PDF 重新排版：封面、章节首页、页眉页脚、代码高亮、提示框和表格样式；使用开源字体（Inter、Source Serif 4、JetBrains Mono、Noto Sans SC，均为 SIL OFL）。

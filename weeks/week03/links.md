@@ -9,3 +9,11 @@ All materials belong to their original authors. 版权归原作者所有，本�
 | 阅读 Matt Pocock's skills | [GitHub](https://github.com/mattpocock/skills) |
 | 阅读 browse.sh | [browse.sh](https://browse.sh) |
 | 文字稿 Transcripts | 官网暂未发布 Not published on the site (as of 2026-10-25) |
+
+## 视频 Videos
+
+- 10/8 嘉宾讲座录像 Guest lecture recording (Lee Robinson): [X](https://x.com/leerob/status/2108650243365736855) · [YouTube](https://www.youtube.com/watch?v=L1OBRtfPS34) · 45 min
+- 相关 Related: [Cursor: coding agents tutorial (2026)](https://www.youtube.com/watch?v=kF2WQgk1LtY)
+- 10/6 课堂录像 Lecture recording: 暂无公开视频 No public video
+
+完整列表 Full list: [VIDEOS.md](../../VIDEOS.md) · [VIDEOS.en.md](../../VIDEOS.en.md)
