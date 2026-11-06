@@ -129,4 +129,4 @@ So today AI review doesn't replace humans; it points human attention at the plac
 
 ## Next chapter
 
-Among review agents, security is special: one missed issue can cost far more than an ordinary bug. Chapter 7, "Security in AI Codebases", will be added after the 11/3 lecture.
+Among review agents, security is special: one missed issue can cost far more than an ordinary bug. See [Chapter 7, "Security in AI Codebases"](07-security-in-ai-codebases.md).

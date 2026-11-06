@@ -1,6 +1,10 @@
 # 更新记录 / Changelog
 日期为北京时间 / Dates in Beijing time (UTC+8).
 
+## 2026-11-06
+- 第 7 周「安全」：11/3 校假停课，11/5 嘉宾 Isaac Evans（Semgrep CEO）；官网未发课件和阅读。按官网三个主题新增按周笔记（中英）和教材第 7 章「AI 代码库的安全」，补充阅读和相关视频只放链接；README、学习路线、目录、视频页同步更新。嘉宾讲座待官方材料。
+  Week 7 "Security": 11/3 university holiday, 11/5 guest Isaac Evans (CEO, Semgrep); no slides or readings published. Added weekly notes (zh + en) and textbook chapter 7 "Security in AI Codebases" organized by the three syllabus topics; supplementary readings and related video linked only. README, learning path, contents and video pages updated. Guest lecture awaits official materials.
+
 ## 2026-10-30
 - 新增视频资源汇总 VIDEOS.md / VIDEOS.en.md，各周 links.md 加了视频小节；10/8 Lee Robinson 讲座补上 YouTube 版。只放链接，不转载。
   Added VIDEOS.md / VIDEOS.en.md and a video section in each week's links.md; added the YouTube copy of Lee Robinson's 10/8 lecture. Links only.

@@ -142,10 +142,23 @@ All links: [weeks/week05/links.md](weeks/week05/links.md)
 
 All links: [weeks/week06/links.md](weeks/week06/links.md)
 
-## Week 7 · Security · Pending
+## Week 7 · Security
 
-- 11/3 · Security in AI codebases · Mihail Eric · Pending · Textbook ch. 7 (coming)
-- 11/5 · Guest lecture · Isaac Evans (guest) · Pending · Textbook ch. 7 (coming)
+### 11/3 (Tue) · No class
+
+- Stanford university holiday.
+
+### 11/5 (Thu) · Guest lecture
+
+- Speaker: Isaac Evans (CEO, Semgrep; guest)
+- Textbook: [Chapter 7](book/en/07-security-in-ai-codebases.md)
+- Notes: [中文](weeks/week07/zh/notes.md) · [English](weeks/week07/en/notes.md)
+- Official materials: not published yet
+- Video: no public recording yet; related talk [When AI Writes Code: Rethinking App Security](https://www.youtube.com/watch?v=TKJGul9TRws)
+
+**Readings:** none listed; supplementary reading in links.md
+
+All links: [weeks/week07/links.md](weeks/week07/links.md)
 
 ## Week 8 · Background Agents · Pending
 

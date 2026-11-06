@@ -54,6 +54,10 @@ No public recording of Silas Alberti's 10/29 lecture yet.
 | Related | Silas Alberti (Chief Research Officer, Cognition) | [Why Cloud Agents Are Finally Ready](https://www.youtube.com/watch?v=KSu4TbzJGAs) | YouTube · Cerebras | 2026-09-02 | 6:49 |
 | Related | Silas Alberti | [DeepWiki: The GitHub Encyclopedia](https://www.youtube.com/watch?v=cX4-e25xQhg) | YouTube · Latent Space | 2025-05-21 | 32:05 |
 
+## Week 7 · Security
+
+No public recording yet of Isaac Evans's 11/5 lecture (11/3 was a university holiday). His related public talk is the first row below.
+
 ## Weeks 7–10 · Upcoming guests (related videos until the lectures happen)
 
 | Type | Speaker | Title | Platform | Date | Length |

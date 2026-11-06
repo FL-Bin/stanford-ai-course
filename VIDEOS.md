@@ -54,6 +54,10 @@ X 版自带章节：2:35 How we got here · 6:13 What changed in the models · 1
 | 相关 | Silas Alberti（Cognition 首席研究官） | [Why Cloud Agents Are Finally Ready](https://www.youtube.com/watch?v=KSu4TbzJGAs) | YouTube · Cerebras | 2026-09-02 | 6:49 |
 | 相关 | Silas Alberti | [DeepWiki: The GitHub Encyclopedia](https://www.youtube.com/watch?v=cX4-e25xQhg) | YouTube · Latent Space | 2025-05-21 | 32:05 |
 
+## 第 7 周 · 安全
+
+11/5 Isaac Evans 的讲座暂无公开录像（11/3 校假停课）。相关公开演讲见下表第一行。
+
 ## 第 7–10 周 · 后续嘉宾（讲座还没开始，先放相关视频）
 
 | 类型 | 讲者 | 标题 | 平台 | 日期 | 时长 |

@@ -142,10 +142,23 @@
 
 全部链接：[weeks/week06/links.md](weeks/week06/links.md)
 
-## 第 7 周｜安全（Security）· 待更新
+## 第 7 周｜安全（Security）
 
-- 11/3 · AI 代码库中的安全 · Mihail Eric · 待更新 · 教材第 7 章（待更新）
-- 11/5 · 嘉宾讲座 · Isaac Evans（嘉宾 Guest） · 待更新 · 教材第 7 章（待更新）
+### 11/3（周二 Tue） · 停课
+
+- 斯坦福校假，没有讲座。
+
+### 11/5（周四 Thu） · 嘉宾讲座
+
+- 讲者：Isaac Evans（Semgrep CEO，嘉宾 Guest）
+- 教材：[第 7 章](book/zh/07-AI代码库的安全.md)
+- 笔记：[中文](weeks/week07/zh/notes.md) · [English](weeks/week07/en/notes.md)
+- 官方材料：官网暂未发布
+- 视频：暂无公开视频；相关演讲 [When AI Writes Code: Rethinking App Security](https://www.youtube.com/watch?v=TKJGul9TRws)
+
+**本周阅读：** 官网未列；补充阅读见 links.md
+
+全部链接：[weeks/week07/links.md](weeks/week07/links.md)
 
 ## 第 8 周｜后台代理（Background Agents）· 待更新
 
