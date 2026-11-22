@@ -58,6 +58,36 @@ X 版自带章节：2:35 How we got here · 6:13 What changed in the models · 1
 
 11/5 Isaac Evans 的讲座暂无公开录像（11/3 校假停课）。相关公开演讲见下表第一行。
 
+## 第 8 周 · 后台代理
+
+11/10 Mihail Eric 的讲座和 11/12 Rajesh Bhatia 的嘉宾讲座暂无公开录像（核对日期：2026-11-22）。Rajesh Bhatia 的相关公开演讲见下方「第 7–10 周」表第二行。
+
+| 类型 | 讲者 | 标题 | 平台 | 日期 | 时长 |
+|---|---|---|---|---|---|
+| 相关 | Mihail Eric（讲师） | [Will Repos Become Software Factories?](https://www.youtube.com/watch?v=dpY7YzZo4kE)（谈到第 8–10 周的设计） | YouTube · Latent Space | 2026-11-08 | 2:00:45 |
+| 相关（阅读：Spotify） | — | [Coding is no longer the constraint: Scaling devex to teams and agents at Spotify](https://www.youtube.com/watch?v=zFslvuvYifQ) | YouTube · Claude | 2026-05-20 | 27:36 |
+| 相关（阅读：Spotify） | Niklas Gustavsson | [How Spotify runs agents across 20M+ lines of code](https://www.youtube.com/watch?v=9DHZLw5653E) | YouTube · Claude | 2026-06-29 | 26:11 |
+| 相关（阅读：Stripe） | — | [Building autonomous coding agents at Stripe](https://www.youtube.com/watch?v=WW-549L6L50) | YouTube · Stripe Developers | 2026-05-26 | 15:52 |
+| 相关（阅读：Stripe） | — | [Stripe's "Minions": How AI agents write 1,300 PRs weekly with 0 human coding](https://www.youtube.com/watch?v=o5Mi5SYSDnY) | YouTube · How I AI | 2026-03-25 | 41:56 |
+| 相关（阅读：Ramp） | Zach Bruggeman | [How to build an agent that builds the culture](https://www.youtube.com/watch?v=MDI81OaZAD4) | YouTube · AI Engineer | 2026-11-20 | 14:28 |
+| 相关 | — | [Background Agents Summit 2026: What Comes After AI Coding Assistants](https://www.youtube.com/watch?v=1VZPX7QD2tk) | YouTube · Ona | 2026-05-06 | 16:02 |
+
+## 第 9 周 · 软件工厂
+
+11/17 Mihail Eric 的讲座和 11/19 Michele Catasta 的嘉宾讲座暂无公开录像（核对日期：2026-11-22）。官网课表调整后，本周嘉宾是 Replit 总裁 Michele Catasta，下方「第 7–10 周」表里的 Elad Gil、Amjad Masad 已不在课表上。「课件引用」指 11/17 课件里给出链接的视频。
+
+| 类型 | 讲者 | 标题 | 平台 | 日期 | 时长 |
+|---|---|---|---|---|---|
+| 课件引用 | Eric Zakariasson（Cursor） | [Building your own software factory](https://www.youtube.com/watch?v=rnDm57Py54A) | YouTube · AI Engineer | 2026-04-28 | 1:23:36 |
+| 课件引用 | Zach Lloyd（Warp） | [How to Build a Software Factory That Improves Itself](https://www.youtube.com/watch?v=nKjPBAw_N_0) | YouTube · AI Engineer | 2026-11-09 | 22:01 |
+| 课件引用 | Zach Lloyd | [Software Engineering Is Becoming Factory Engineering](https://www.youtube.com/watch?v=tUPPVhBBcoM) | YouTube · AI Engineer | 2026-09-27 | 20:36 |
+| 相关（阅读：The Software Factory） | Zacharias Malguitou | [Software Factory in Public: 375 PRs in 10 Days](https://www.youtube.com/watch?v=a4pEznCiWNo) | YouTube · Ona | 2026-05-07 | 28:19 |
+| 相关（阅读：The Software Factory） | — | [Building a Software Factory — Day 7: Augmenting the Product Manager](https://www.youtube.com/watch?v=LU8Mo4z4fBI) | YouTube · Ona | 2026-04-21 | 25:33 |
+| 相关（阅读：Warp） | — | [Introducing Warp Factories](https://www.youtube.com/watch?v=0WBk4ai8y1A) | YouTube · Warp | 2026-08-18 | 8:56 |
+| 相关 | Michele Catasta（Replit 总裁，11/19） | [The 3 Pillars of Autonomy](https://www.youtube.com/watch?v=MLhAA9yguwM) | YouTube · AI Engineer | 2025-12-22 | 24:42 |
+| 相关 | Michele Catasta | [Evaluating and improving Replit Agent at scale](https://www.youtube.com/watch?v=snroDwX1-JU) | YouTube · Claude | 2026-05-08 | 27:42 |
+| 相关 | Michele Catasta | [Guest Lecture 11 CS329A: Coding Agents](https://www.youtube.com/watch?v=a0iOk3xrHNc)（斯坦福另一门课 CS329A） | YouTube | 2025-02-18 | 1:16:00 |
+
 ## 第 7–10 周 · 后续嘉宾（讲座还没开始，先放相关视频）
 
 | 类型 | 讲者 | 标题 | 平台 | 日期 | 时长 |

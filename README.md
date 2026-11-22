@@ -37,8 +37,8 @@ PDF 随仓库更新自动重新生成，链接不变。
 | 5 | 让代码库适合代理 Agent-Ready Codebases | 10/20, 10/22 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week05](weeks/week05/) |
 | 6 | 代理代码审查 Agentic Code Review | 10/27, 10/29 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week06](weeks/week06/) |
 | 7 | 安全 Security | 11/3（停课）, 11/5 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week07](weeks/week07/) |
-| 8 | 后台代理 Background Agents | 11/10, 11/12 | ⏳ 待更新 |
-| 9 | 打造 AI 原生团队 Building an AI-Native Team | 11/17, 11/19 | ⏳ 待更新 |
+| 8 | 后台代理 Background Agents | 11/10, 11/12 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week08](weeks/week08/) |
+| 9 | 软件工厂 The Software Factory（官网课表调整后） | 11/17, 11/19 | ✅ 已更新（嘉宾讲座待官方材料）→ [weeks/week09](weeks/week09/) |
 | 10 | 软件工厂与未来 The Software Factory + The Future | 12/1, 12/3 | ⏳ 待更新 |
 
 预计 2026 年 12 月上旬随课程结束完成全部 10 周。更新记录见 [CHANGELOG.md](CHANGELOG.md)。

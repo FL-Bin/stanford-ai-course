@@ -6,7 +6,7 @@ This book reorganizes the ten weeks of Stanford CS146S (The Modern Software Deve
 
 Looking for a specific date? See the [Learning Path](../../LEARNING_PATH.en.md).
 
-**Appendix: weekly notes.** The original slide-order notes stay in [weeks/](../../weeks/) ([Week 1](../../weeks/week01/en/00_index.md) · [Week 2](../../weeks/week02/en/notes.md) · [Week 3](../../weeks/week03/en/notes.md) · [Week 4](../../weeks/week04/en/notes.md) · [Week 5](../../weeks/week05/en/notes.md) · [Week 6](../../weeks/week06/en/notes.md) · [Week 7](../../weeks/week07/en/notes.md)) for tracing back to the slides page by page.
+**Appendix: weekly notes.** The original slide-order notes stay in [weeks/](../../weeks/) ([Week 1](../../weeks/week01/en/00_index.md) · [Week 2](../../weeks/week02/en/notes.md) · [Week 3](../../weeks/week03/en/notes.md) · [Week 4](../../weeks/week04/en/notes.md) · [Week 5](../../weeks/week05/en/notes.md) · [Week 6](../../weeks/week06/en/notes.md) · [Week 7](../../weeks/week07/en/notes.md) · [Week 8](../../weeks/week08/en/notes.md) · [Week 9](../../weeks/week09/en/notes.md)) for tracing back to the slides page by page.
 
 ```mermaid
 flowchart LR
@@ -26,8 +26,8 @@ flowchart LR
 | 5 | [Agent-Ready Codebases](05-agent-ready-codebases.md) | Week 5 (10/20, 10/22) | Done |
 | 6 | [Agentic Code Review](06-agentic-code-review.md) | Week 6 (10/27, 10/29) | Done |
 | 7 | [Security in AI Codebases](07-security-in-ai-codebases.md) | Week 7 (11/3 no class, 11/5) | Done |
-| 8 | Background Agents | Week 8 (11/10, 11/12) | Coming |
-| 9 | Building an AI-Native Team | Week 9 (11/17, 11/19) | Coming |
+| 8 | [Background Agents](08-background-agents.md) | Week 8 (11/10, 11/12) | Done |
+| 9 | [The Software Factory](09-the-software-factory.md) | Week 9 (11/17, 11/19) | Done |
 | 10 | The Software Factory and the Future | Week 10 (12/1, 12/3) | Coming |
 
 ## Chapter 1 · How Coding Agents Work
@@ -71,14 +71,17 @@ flowchart LR
 - **Lectures:** Week 7 syllabus topics (11/3 university holiday); supplementary readings: Semgrep's two studies on LLM vulnerability hunting, The lethal trifecta.
 - **Guest sidebar:** Isaac Evans (11/5, Semgrep). Awaiting official materials; see his public talk <https://www.youtube.com/watch?v=TKJGul9TRws>.
 
-## Chapter 8 · Background Agents (coming)
+## Chapter 8 · Background Agents
 
-- **Planned:** dispatching tasks asynchronously so agents keep working in the background.
-- **Lectures:** 11/10; guest sidebar Rajesh Bhatia (11/12).
+- **Learning goals:** tell synchronous and background agents apart; break a background agent platform into five questions (where it runs, where tasks come from, what it can access, how it proves its work, who it hands off to); understand verification loops, permission design and three multi-agent patterns.
+- **Lectures:** 11/10 Background agents: launching tasks asynchronously; readings Spotify (Honk), Stripe (Minions), Ramp (Inspect), LangChain open-swe.
+- **Guest sidebar:** Rajesh Bhatia (11/12, Cloudflare). Awaiting official materials; see his public talk <https://www.youtube.com/watch?v=MbLdrAZFQRs>.
 
-## Chapter 9 · Building an AI-Native Team (coming)
+## Chapter 9 · The Software Factory
 
-- **Lectures:** guest sidebars Elad Gil (11/17) and Amjad Masad (11/19).
+- **Learning goals:** name the three parts of a software factory (production line, quality control, feedback loop); draw its structure and the three human gates; understand factory definitions as code, judges and private benchmarks, post-deployment monitoring and security, and the crawl-walk-run adoption path.
+- **Lectures:** 11/17 The Software Factory and self-improving software systems; readings Warp factory example, The Software Factory, OpenInspect, WarpBench. After the official schedule change this chapter replaces the originally planned "Building an AI-Native Team".
+- **Guest sidebar:** Michele Catasta (11/19, Replit). Awaiting official materials.
 
 ## Chapter 10 · The Software Factory and the Future (coming)
 

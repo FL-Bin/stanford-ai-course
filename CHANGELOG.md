@@ -1,6 +1,10 @@
 # 更新记录 / Changelog
 日期为北京时间 / Dates in Beijing time (UTC+8).
 
+## 2026-11-22
+- 第 8 周「后台代理」和第 9 周「软件工厂」：按 11/10、11/17 课件和官方阅读新增按周笔记（中英）和教材第 8 章「后台代理」、第 9 章「软件工厂」，各配一张流程图；课件只放链接。11/12 嘉宾 Rajesh Bhatia（Cloudflare）、11/19 嘉宾 Michele Catasta（Replit）待官方材料，相关公开视频已链接。官网课表开课后有调整：第 9 周由「打造 AI 原生团队」改为「软件工厂」，AI 原生团队移到第 10 周；第 10 周条目等 12/1 课后再更新。README、学习路线、目录、视频页同步更新。
+  Week 8 "Background Agents" and Week 9 "The Software Factory": added weekly notes (zh + en) and textbook chapters 8 "Background Agents" and 9 "The Software Factory" based on the 11/10 and 11/17 slides and official readings, each with one diagram; slides linked only. Guest lectures by Rajesh Bhatia (Cloudflare, 11/12) and Michele Catasta (Replit, 11/19) await official materials; related public videos linked. The official schedule changed mid-term: Week 9 is now "The Software Factory" instead of "Building an AI-Native Team", which moved to Week 10; Week 10 entries will be updated after the 12/1 lecture. README, learning path, contents and video pages updated.
+
 ## 2026-11-06
 - 第 7 周「安全」：11/3 校假停课，11/5 嘉宾 Isaac Evans（Semgrep CEO）；官网未发课件和阅读。按官网三个主题新增按周笔记（中英）和教材第 7 章「AI 代码库的安全」，补充阅读和相关视频只放链接；README、学习路线、目录、视频页同步更新。嘉宾讲座待官方材料。
   Week 7 "Security": 11/3 university holiday, 11/5 guest Isaac Evans (CEO, Semgrep); no slides or readings published. Added weekly notes (zh + en) and textbook chapter 7 "Security in AI Codebases" organized by the three syllabus topics; supplementary readings and related video linked only. README, learning path, contents and video pages updated. Guest lecture awaits official materials.

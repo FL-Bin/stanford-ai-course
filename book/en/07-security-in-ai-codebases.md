@@ -101,4 +101,4 @@ A sturdier division of labor is: rule tools provide deterministic coverage, agen
 
 ## Next chapter
 
-With security gates in place, it becomes safe to hand more work to agents running in the background. Chapter 8, "Background Agents", will follow the 11/10 lecture.
+With security gates in place, it becomes safe to hand more work to agents running in the background. See [Chapter 8, "Background Agents"](08-background-agents.md).

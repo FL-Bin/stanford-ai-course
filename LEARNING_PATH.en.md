@@ -160,15 +160,51 @@ All links: [weeks/week06/links.md](weeks/week06/links.md)
 
 All links: [weeks/week07/links.md](weeks/week07/links.md)
 
-## Week 8 · Background Agents · Pending
+## Week 8 · Background Agents
 
-- 11/10 · Background agents: launching tasks asynchronously · Mihail Eric · Pending · Textbook ch. 8 (coming)
-- 11/12 · Guest lecture · Rajesh Bhatia (guest) · Pending · Textbook ch. 8 (coming)
+### 11/10 (Tue) · Background agents: launching tasks asynchronously
 
-## Week 9 · Building an AI-Native Team · Pending
+- Speaker: Mihail Eric
+- Textbook: [Chapter 8](book/en/08-background-agents.md)
+- Notes: [中文](weeks/week08/zh/notes.md) · [English](weeks/week08/en/notes.md)
+- Official materials: [Slides](https://docs.google.com/presentation/d/1R8Pr3RNAFQiw8mHKbXopOhxi_h9zuEeUKrJkxCZ5Fio/edit)
+- Video: no public recording yet
 
-- 11/17 · Guest lecture · Elad Gil (guest) · Pending · Textbook ch. 9 (coming)
-- 11/19 · Guest lecture · Amjad Masad (guest) · Pending · Textbook ch. 9 (coming)
+### 11/12 (Thu) · Guest lecture
+
+- Speaker: Rajesh Bhatia (Senior Director, Cloudflare; guest)
+- Textbook: [Chapter 8](book/en/08-background-agents.md)
+- Notes: [中文](weeks/week08/zh/notes.md) · [English](weeks/week08/en/notes.md)
+- Official materials: not published yet
+- Video: no public recording yet; related talk [Cloudflare's AI Engineering Stack: Assisted to Delegated](https://www.youtube.com/watch?v=MbLdrAZFQRs)
+
+**Readings:** [Spotify: From Migration Scripts to Agent Fleets](https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1) · [Stripe: From Slack Message to Review-Ready PR](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents) · [Ramp: Giving Agents the Tools to Prove Their Work](https://builders.ramp.com/post/why-we-built-our-background-agent) · [LangChain: open-swe](https://github.com/langchain-ai/open-swe)
+
+All links: [weeks/week08/links.md](weeks/week08/links.md)
+
+## Week 9 · The Software Factory
+
+The official schedule changed after the term began: this week was originally "Building an AI-Native Team" (guests Elad Gil and Amjad Masad) and is now "The Software Factory"; the AI-native team topic moved to Week 10.
+
+### 11/17 (Tue) · The Software Factory and self-improving software systems
+
+- Speaker: Mihail Eric
+- Textbook: [Chapter 9](book/en/09-the-software-factory.md)
+- Notes: [中文](weeks/week09/zh/notes.md) · [English](weeks/week09/en/notes.md)
+- Official materials: [Slides](https://docs.google.com/presentation/d/1hxlLspHQ2WOs2tZmCN3gdDi7dfbbRorxzPr65HyyE6Y/edit)
+- Video: no public recording yet; talks cited in the slides are in [weeks/week09/links.md](weeks/week09/links.md)
+
+### 11/19 (Thu) · Guest lecture
+
+- Speaker: Michele Catasta (President, Replit; guest)
+- Textbook: [Chapter 9](book/en/09-the-software-factory.md)
+- Notes: [中文](weeks/week09/zh/notes.md) · [English](weeks/week09/en/notes.md)
+- Official materials: not published yet
+- Video: no public recording yet; related talk [The 3 Pillars of Autonomy](https://www.youtube.com/watch?v=MLhAA9yguwM)
+
+**Readings:** [Warp factory example: From Issue to Pull Request](https://github.com/warpdotdev/warp-factory-examples/tree/main/examples/02-sdlc-issue-to-pr) · [The Software Factory](https://software-factory.dev) · [OpenInspect](https://openinspect.dev) · [WarpBench](https://warp.dev/factories/benchmarks/warpbench)
+
+All links: [weeks/week09/links.md](weeks/week09/links.md)
 
 ## Week 10 · The Software Factory + The Future · Pending
 

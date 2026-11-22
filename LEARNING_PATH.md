@@ -160,15 +160,51 @@
 
 全部链接：[weeks/week07/links.md](weeks/week07/links.md)
 
-## 第 8 周｜后台代理（Background Agents）· 待更新
+## 第 8 周｜后台代理（Background Agents）
 
-- 11/10 · 后台代理：异步启动任务 · Mihail Eric · 待更新 · 教材第 8 章（待更新）
-- 11/12 · 嘉宾讲座 · Rajesh Bhatia（嘉宾 Guest） · 待更新 · 教材第 8 章（待更新）
+### 11/10（周二 Tue） · 后台代理：异步启动任务
 
-## 第 9 周｜打造 AI 原生团队（Building an AI-Native Team）· 待更新
+- 讲者：Mihail Eric
+- 教材：[第 8 章](book/zh/08-后台代理.md)
+- 笔记：[中文](weeks/week08/zh/notes.md) · [English](weeks/week08/en/notes.md)
+- 官方材料：[课件 Slides](https://docs.google.com/presentation/d/1R8Pr3RNAFQiw8mHKbXopOhxi_h9zuEeUKrJkxCZ5Fio/edit)
+- 视频：暂无公开视频
 
-- 11/17 · 嘉宾讲座 · Elad Gil（嘉宾 Guest） · 待更新 · 教材第 9 章（待更新）
-- 11/19 · 嘉宾讲座 · Amjad Masad（嘉宾 Guest） · 待更新 · 教材第 9 章（待更新）
+### 11/12（周四 Thu） · 嘉宾讲座
+
+- 讲者：Rajesh Bhatia（Cloudflare 高级总监，嘉宾 Guest）
+- 教材：[第 8 章](book/zh/08-后台代理.md)
+- 笔记：[中文](weeks/week08/zh/notes.md) · [English](weeks/week08/en/notes.md)
+- 官方材料：官网暂未发布
+- 视频：暂无公开视频；相关演讲 [Cloudflare's AI Engineering Stack: Assisted to Delegated](https://www.youtube.com/watch?v=MbLdrAZFQRs)
+
+**本周阅读：** [Spotify：From Migration Scripts to Agent Fleets](https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1) · [Stripe：From Slack Message to Review-Ready PR](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents) · [Ramp：Giving Agents the Tools to Prove Their Work](https://builders.ramp.com/post/why-we-built-our-background-agent) · [LangChain：open-swe](https://github.com/langchain-ai/open-swe)
+
+全部链接：[weeks/week08/links.md](weeks/week08/links.md)
+
+## 第 9 周｜软件工厂（The Software Factory）
+
+官网课表在开课后做过调整：本周原定「打造 AI 原生团队」（嘉宾 Elad Gil、Amjad Masad），现为「软件工厂」，AI 原生团队移到第 10 周。
+
+### 11/17（周二 Tue） · 软件工厂与自改进的软件系统
+
+- 讲者：Mihail Eric
+- 教材：[第 9 章](book/zh/09-软件工厂.md)
+- 笔记：[中文](weeks/week09/zh/notes.md) · [English](weeks/week09/en/notes.md)
+- 官方材料：[课件 Slides](https://docs.google.com/presentation/d/1hxlLspHQ2WOs2tZmCN3gdDi7dfbbRorxzPr65HyyE6Y/edit)
+- 视频：暂无公开视频；课件引用的演讲见 [weeks/week09/links.md](weeks/week09/links.md)
+
+### 11/19（周四 Thu） · 嘉宾讲座
+
+- 讲者：Michele Catasta（Replit 总裁，嘉宾 Guest）
+- 教材：[第 9 章](book/zh/09-软件工厂.md)
+- 笔记：[中文](weeks/week09/zh/notes.md) · [English](weeks/week09/en/notes.md)
+- 官方材料：官网暂未发布
+- 视频：暂无公开视频；相关演讲 [The 3 Pillars of Autonomy](https://www.youtube.com/watch?v=MLhAA9yguwM)
+
+**本周阅读：** [Warp 工厂示例：From Issue to Pull Request](https://github.com/warpdotdev/warp-factory-examples/tree/main/examples/02-sdlc-issue-to-pr) · [The Software Factory](https://software-factory.dev) · [OpenInspect](https://openinspect.dev) · [WarpBench](https://warp.dev/factories/benchmarks/warpbench)
+
+全部链接：[weeks/week09/links.md](weeks/week09/links.md)
 
 ## 第 10 周｜软件工厂与未来（The Software Factory + The Future）· 待更新
 
